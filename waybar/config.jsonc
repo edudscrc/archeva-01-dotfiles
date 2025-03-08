@@ -122,7 +122,7 @@
     "custom/power": {
     	"format": "{icon}",
 		"format-icons": "",
-		"on-click": "uwsm app -- wlogout",
+		"on-click": "wlogout",
     	"tooltip": false
     },
     "custom/pipe": {

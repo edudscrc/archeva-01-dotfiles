@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "uwsm app -- hyprlock",
+    "action" : "hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }

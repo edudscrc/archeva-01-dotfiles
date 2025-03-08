@@ -7,9 +7,8 @@
 
 alias ls='eza'
 alias lsa='eza -lasnew'
-alias grep='grep --color=auto'
-alias code='uwsm app -- code'
-alias mpvhdr='uwsm app -- mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk'
+
+alias mpvhdr='mpv --vo=gpu-next --target-colorspace-hint --gpu-api=vulkan --gpu-context=waylandvk'
 
 # Define color escape sequences
 RESET="\[\e[0m\]"    # Reset color
@@ -28,3 +27,7 @@ parse_git_branch() {
 }
 
 PS1="[\u@\h \w]\$(parse_git_branch | sed 's/^/  /') \$ "
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - bash)"

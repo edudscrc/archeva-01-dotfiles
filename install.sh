@@ -14,6 +14,7 @@ DOTFILES=(
 declare -A HOME_FILES
 HOME_FILES=(
     [".bashrc"]="$HOME/.bashrc"
+    [".bash_profile"]="$HOME/.bash_profile"
 )
 
 echo "Setting up dotfiles..."
@@ -45,5 +46,7 @@ for file in "${!HOME_FILES[@]}"; do
     ln -sfn "$SOURCE" "$TARGET"
     echo "Linked $SOURCE -> $TARGET"
 done
+
+hyprctl reload
 
 echo "Dotfiles setup complete!"
