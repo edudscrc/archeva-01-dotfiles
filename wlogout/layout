@@ -1,18 +1,18 @@
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "uwsm app -- hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }
 {
     "label" : "shutdown",
-    "action" : "poweroff",
+    "action" : "systemctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
 {
     "label" : "reboot",
-    "action" : "reboot",
+    "action" : "systemctl reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }

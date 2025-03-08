@@ -79,7 +79,6 @@
         "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp3_input",
     	"interval": 2,
     	"format": " {temperatureC}°C",
-        "on-click": "kitty -e btop",
     	"tooltip": false
     },
     "pulseaudio#sound": {
@@ -123,7 +122,7 @@
     "custom/power": {
     	"format": "{icon}",
 		"format-icons": "",
-		"on-click": "wlogout",
+		"on-click": "uwsm app -- wlogout",
     	"tooltip": false
     },
     "custom/pipe": {
