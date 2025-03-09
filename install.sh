@@ -9,8 +9,6 @@ DOTFILES=(
     ["waybar"]="$CONFIG_DIR/waybar"
     ["rofi"]="$CONFIG_DIR/rofi"
     ["wlogout"]="$CONFIG_DIR/wlogout"
-    ["code-flags.conf"]="$CONFIG_DIR/code-flags.conf"
-    ["chrome-flags.conf"]="$CONFIG_DIR/chrome-flags.conf"
 )
 
 declare -A HOME_FILES
