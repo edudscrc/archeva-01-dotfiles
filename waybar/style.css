@@ -7,44 +7,44 @@
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
-@define-color power_idle #966BF2;
-@define-color power_hover #B6F2D0;
-
-@define-color network_idle #63BF7A;
-@define-color network_hover #B6F2D0;
-
-@define-color bluetooth_idle #63BF7A;
-@define-color bluetooth_hover #B6F2D0;
-
-@define-color sound_idle #966BF2;
-@define-color sound_hover #B6F2D0;
-
-@define-color temperature_idle #63BF7A;
-@define-color temperature_hover #B6F2D0;
-
-@define-color clock_idle #63BF7A;
-@define-color clock_hover #B6F2D0;
-
-@define-color spotify_idle #1DB954;
-@define-color spotify_hover #B6F2D0;
+@define-color modules_background #1F1826;
+@define-color modules_border #3A2C59;
 
 @define-color archicon_idle #1793d0;
 @define-color archicon_hover #B6F2D0;
 
+@define-color workspaces_button_idle #3A2C59;
+@define-color workspaces_button_hover #966BF2;
+
+@define-color spotify_idle #1DB954;
+@define-color spotify_hover #B6F2D0;
+
 @define-color tray_menu #1F1826;
-@define-color tray_menu_border #EEDCF2;
+@define-color tray_menu_border #3A2C59;
 @define-color tray_menu_item #966BF2;
 @define-color tray_menu_item_hover #B6F2D0;
 @define-color tray_menu_item_hover_background #966BF2;
 
-@define-color workspaces_button_idle #3A2C59;
-@define-color workspaces_button_hover #966BF2;
+@define-color clock_idle #63BF7A;
+@define-color clock_hover #B6F2D0;
 
-@define-color tooltip_background #000000;
-@define-color tooltip_text #FFFFFF;
+@define-color temperature_idle #966BF2;
+@define-color temperature_hover #B6F2D0;
 
-@define-color modules_background #1F1826;
-@define-color modules_border #3A2C59;
+@define-color sound_idle #63BF7A;
+@define-color sound_hover #B6F2D0;
+
+@define-color bluetooth_idle #966BF2;
+@define-color bluetooth_hover #B6F2D0;
+
+@define-color network_idle #966BF2;
+@define-color network_hover #B6F2D0;
+
+@define-color power_idle #63BF7A;
+@define-color power_hover #B6F2D0;
+
+@define-color tooltip_background #1F1826;
+@define-color tooltip_text #966BF2;
 
 /*-----GLOBAL-----*/
 

@@ -7,10 +7,10 @@
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
-{
+[{
     "spacing": 12,
     "margin": 0,
-
+    "output": "DP-3",
     "modules-left": [
         "custom/archicon",
         "hyprland/workspaces",
@@ -35,8 +35,6 @@
     "hyprland/workspaces": {
         "format": "{name}",
         "persistent-workspaces": {
-            "1": [],
-            "2": [],
             "3": [],
             "4": []
         }
@@ -62,10 +60,10 @@
         "calendar": {
         	"mode": "month",
         	"format": {
-        		"months": "<span color='#fab387'><b>{}</b></span>",
-                "days": "<span color='#b4befe'><b>{}</b></span>",
-                "weekdays": "<span color='#eba0ac'><b>{}</b></span>",
-                "today": "<span color='#a6e3a1'><b>{}</b></span>"
+        		"months": "<span color='#966BF2'><b>{}</b></span>",
+                "days": "<span color='#63BF7A'><b>{}</b></span>",
+                "weekdays": "<span color='#B6F2D0'><b>{}</b></span>",
+                "today": "<span color='#966BF2'><b>{}</b></span>"
         	}
         },
         "actions": {
@@ -129,4 +127,124 @@
     	"format": "|",
     	"tooltip": false
     }
-}
+}, {
+    "spacing": 12,
+    "margin": 0,
+    "output": "HDMI-A-1",
+    "modules-left": [
+        "custom/archicon",
+        "hyprland/workspaces",
+        "custom/spotify",
+        "tray"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "temperature",
+        "pulseaudio#sound",
+        "group/group-end",
+        "custom/power"
+    ],
+
+    "custom/archicon": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "rofi -show drun"
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "persistent-workspaces": {
+            "1": [],
+            "2": []
+        }
+    },
+    "custom/spotify": {
+    	"format": "{}",
+   	    "exec": "/usr/bin/python3 ~/.config/waybar/assets/mediaplayer.py --player spotify",
+   	    "return-type": "json",
+   	    "on-click": "playerctl -p spotify play-pause",
+   	    "on-scroll-up": "playerctl -p spotify next",
+   	    "on-scroll-down": "playerctl -p spotify previous"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 6,
+        "tooltip": false
+    },
+
+    "clock": {
+        "interval": 30,
+        "format": "{:%a %d %b %H:%M}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+        	"mode": "month",
+        	"format": {
+        		"months": "<span color='#966BF2'><b>{}</b></span>",
+                "days": "<span color='#63BF7A'><b>{}</b></span>",
+                "weekdays": "<span color='#B6F2D0'><b>{}</b></span>",
+                "today": "<span color='#966BF2'><b>{}</b></span>"
+        	}
+        },
+        "actions": {
+            "on-click": "shift_reset",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "temperature": {
+        "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp3_input",
+    	"interval": 2,
+    	"format": " {temperatureC}°C",
+    	"tooltip": false
+    },
+    "pulseaudio#sound": {
+	    "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": {
+            "default": ["", "", " "]
+        },
+        "on-click": "~/.config/waybar/assets/volume_notify.sh mute",
+        "on-click-right": "pavucontrol",
+        "on-scroll-down": "~/.config/waybar/assets/volume_notify.sh down",
+        "on-scroll-up": "~/.config/waybar/assets/volume_notify.sh up",
+        "tooltip": false
+    },
+    "group/group-end": {
+        "orientation": "horizontal",
+        "modules": [
+            "bluetooth",
+            "custom/pipe",
+            "network"
+        ],
+        "spacing": 15
+    },
+    "bluetooth": {
+        "format-disabled": "",
+        "format-off": "󰂲",
+        "format-on": "󰂯",
+        "format-connected": "󰂱",
+        "on-click-right": "bluetoothctl disconnect",
+        "on-click": "kitty -e bluetoothctl",
+        "tooltip-format-connected": "{device_alias}\t{device_address}"
+    },
+    "network": {
+    	"interval": 60,
+        "format-wifi": "",
+        "format-ethernet": "",
+        "format-disconnected": "",
+        "tooltip-format-ethernet": "{ifname}",
+        "tooltip-format-wifi": "{essid}"
+    },
+    "custom/power": {
+    	"format": "{icon}",
+		"format-icons": "",
+		"on-click": "wlogout",
+    	"tooltip": false
+    },
+    "custom/pipe": {
+    	"format": "|",
+    	"tooltip": false
+    }
+}]
