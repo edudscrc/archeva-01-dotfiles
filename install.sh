@@ -70,6 +70,11 @@ for file in "${!HOME_FILES[@]}"; do
     echo "Linked $SOURCE -> $TARGET"
 done
 
+spicetify backup apply
+spicetify config current_theme archeva_01_spicetify
+spicetify config color_scheme archeva_01_spicetify
+spicetify apply
+
 hyprctl reload
 
 echo "Dotfiles setup complete!"
