@@ -2,6 +2,7 @@
 
 DOTFILES_DIR=~/archeva-01-dotfiles
 CONFIG_DIR=~/.config
+CACHE_DIR=~/.cache
 
 declare -A DOTFILES
 DOTFILES=(
@@ -9,6 +10,8 @@ DOTFILES=(
     ["waybar"]="$CONFIG_DIR/waybar"
     ["rofi"]="$CONFIG_DIR/rofi"
     ["wlogout"]="$CONFIG_DIR/wlogout"
+    ["wal"]="$CACHE_DIR/wal"
+    ["kitty"]="$CONFIG_DIR/kitty"
 )
 
 declare -A HOME_FILES
