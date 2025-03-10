@@ -26,7 +26,7 @@ parse_git_branch() {
     git branch 2>/dev/null | grep '*' | sed 's/* //'
 }
 
-PS1="[$CYAN\u@$CYAN\h $RED\w$RESET]$MAGENTA\$(parse_git_branch | sed 's/^/  /') $CYAN\$$RESET "
+PS1="[$CYAN\u@$CYAN\h $GREEN\w$RESET]$MAGENTA\$(parse_git_branch | sed 's/^/  /') $CYAN\$$RESET "
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -35,3 +35,5 @@ eval "$(pyenv init - bash)"
 (cat ~/.cache/wal/sequences &)
 
 source ~/.cache/wal/colors-tty.sh
+
+export PATH=$PATH:/home/edudscrc/.spicetify
