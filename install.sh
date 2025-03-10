@@ -3,6 +3,7 @@
 DOTFILES_DIR=~/archeva-01-dotfiles
 CONFIG_DIR=~/.config
 CACHE_DIR=~/.cache
+SPICETIFY_THEMES_DIR=~/.config/spicetify/Themes
 
 declare -A DOTFILES
 DOTFILES=(
@@ -12,6 +13,11 @@ DOTFILES=(
     ["wlogout"]="$CONFIG_DIR/wlogout"
     ["wal"]="$CACHE_DIR/wal"
     ["kitty"]="$CONFIG_DIR/kitty"
+)
+
+declare -A SPICETIFY_THEMES
+SPICETIFY_THEMES=(
+    ["archeva_01_spicetify"]="$SPICETIFY_THEMES_DIR/archeva_01_spicetify"
 )
 
 declare -A HOME_FILES
@@ -25,6 +31,20 @@ echo "Setting up dotfiles..."
 # Symlink .config files
 for folder in "${!DOTFILES[@]}"; do
     TARGET="${DOTFILES[$folder]}"
+    SOURCE="$DOTFILES_DIR/$folder"
+
+    if [ -d "$TARGET" ] && [ ! -L "$TARGET" ]; then
+        echo "Backing up existing $TARGET to $TARGET.bak"
+        mv "$TARGET" "$TARGET.bak"
+    fi
+
+    ln -sfn "$SOURCE" "$TARGET"
+    echo "Linked $SOURCE -> $TARGET"
+done
+
+# Symlink .config files
+for folder in "${!SPICETIFY_THEMES[@]}"; do
+    TARGET="${SPICETIFY_THEMES[$folder]}"
     SOURCE="$DOTFILES_DIR/$folder"
 
     if [ -d "$TARGET" ] && [ ! -L "$TARGET" ]; then
