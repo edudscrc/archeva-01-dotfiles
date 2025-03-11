@@ -34,6 +34,4 @@ eval "$(pyenv init - bash)"
 
 (cat ~/.cache/wal/sequences &)
 
-source ~/.cache/wal/colors-tty.sh
-
 export PATH=$PATH:/home/edudscrc/.spicetify
