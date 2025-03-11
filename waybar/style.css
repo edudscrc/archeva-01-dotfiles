@@ -7,53 +7,83 @@
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
-@define-color modules_background #100c12;
-@define-color modules_border #6A4AA5;
+/* Pywal generated */
+@define-color foreground #c3c2c3;
+@define-color background #100c12;
+@define-color cursor #c3c2c3;
 
-@define-color archicon_idle #1793d0;
-@define-color archicon_hover #B6F2D0;
+@define-color color0 #100c12;
+@define-color color1 #6A4AA5;
+@define-color color2 #8A7497;
+@define-color color3 #8A5FE2;
+@define-color color4 #8F63E7;
+@define-color color5 #7897AE;
+@define-color color6 #67CC82;
+@define-color color7 #948d97;
+@define-color color8 #65586c;
+@define-color color9 #8d70c1;
+@define-color color10 #ac7ec8;
+@define-color color11 #ae9bd4;
+@define-color color12 #b2a0d6;
+@define-color color13 #8cb3ce;
+@define-color color14 #93d1a4;
+@define-color color15 #c3c2c3;
+/*---------------------------*/
 
-@define-color workspaces_button_idle #2B2031;
-@define-color workspaces_button_hover #8A5FE2;
+@define-color modules_background @background;
+@define-color modules_border @background;
 
-@define-color spotify_idle #1DB954;
-@define-color spotify_hover #B6F2D0;
+@define-color archicon_idle @color10;
+@define-color archicon_hover @color12;
 
-@define-color tray_menu #1F1826;
-@define-color tray_menu_border #3A2C59;
-@define-color tray_menu_item #8A5FE2;
-@define-color tray_menu_item_hover #B6F2D0;
-@define-color tray_menu_item_hover_background #8A5FE2;
+@define-color workspaces_button_idle @color8;
+@define-color workspaces_button_hover @color10;
 
-@define-color clock_idle #67CC82;
-@define-color clock_hover #B6F2D0;
+@define-color spotify_idle @color10;
+@define-color spotify_hover @color12;
 
-@define-color temperature_idle #67CC82;
-@define-color temperature_hover #B6F2D0;
+@define-color tray_menu @background;
+@define-color tray_menu_border @background;
+@define-color tray_menu_item @color12;
+@define-color tray_menu_item_hover @background;
+@define-color tray_menu_item_hover_background @color12;
 
-@define-color sound_idle #67CC82;
-@define-color sound_hover #B6F2D0;
+@define-color clock_idle @color10;
+@define-color clock_hover @color12;
 
-@define-color bluetooth_idle #67CC82;
-@define-color bluetooth_hover #B6F2D0;
+@define-color temperature_idle @color10;
+@define-color temperature_hover @color12;
 
-@define-color network_idle #67CC82;
-@define-color network_hover #B6F2D0;
+@define-color sound_idle @color10;
+@define-color sound_hover @color12;
 
-@define-color power_idle #67CC82;
-@define-color power_hover #B6F2D0;
+@define-color bluetooth_idle @color10;
+@define-color bluetooth_hover @color12;
 
-@define-color tooltip_background #100c12;
-@define-color tooltip_text #8A5FE2;
+@define-color network_idle @color10;
+@define-color network_hover @color12;
+
+@define-color power_idle @color10;
+@define-color power_hover @color12;
+
+@define-color tooltip_background @background;
+@define-color tooltip_text @color12;
 
 /*-----GLOBAL-----*/
 
 * {
-    font-family: "JetBrains Mono", "JetBrainsMono Nerd Font";
+	font-family: "JetBrains Mono", "JetBrainsMono Nerd Font";
     font-weight: 600;
-    font-size: 16px;
-    margin: 0;
+	margin: 0;
     padding: 0;
+}
+
+.bar_2k {
+    font-size: 18px;
+}
+
+.bar_1080p {
+    font-size: 15px;
 }
 
 #waybar {
@@ -72,12 +102,21 @@
 
 /*-----ARCH ICON-----*/
 
-#custom-archicon {
+.bar_2k #custom-archicon {
 	color: @archicon_idle;
 
-	font-size: 20px;
+	font-size: 22px; /* Global font size + 4px */
 
-	padding: 0 6px;
+	padding: 0 8px;
+	transition: color 0.3s;
+}
+
+.bar_1080p #custom-archicon {
+	color: @archicon_idle;
+
+	font-size: 19px; /* Global font size + 4px */
+
+	padding: 0 8px;
 	transition: color 0.3s;
 }
 
@@ -200,7 +239,8 @@
 
 /*-----GROUP END-----*/
 
-#group-end  {
+#group-end {
+	padding: 0 6px;
 }
 
 /*-----CUSTOM PIPE-----*/
@@ -212,11 +252,19 @@
 
 /*-----BLUETOOTH-----*/
 
-#bluetooth {
+.bar_2k #bluetooth {
 	color: @bluetooth_idle;
 
 	padding: 0 3px 0 2px;
-	font-size: 19px;
+	font-size: 21px; /* Global font size + 3px */
+	transition: color 0.3s;
+}
+
+.bar_1080p #bluetooth {
+	color: @bluetooth_idle;
+
+	padding: 0 3px 0 2px;
+	font-size: 18px; /* Global font size + 3px */
 	transition: color 0.3s;
 }
 
