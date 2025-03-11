@@ -8,22 +8,22 @@ const char *colorname[] = {
   [4] = "#8F63E7", /* blue    */
   [5] = "#7897AE", /* magenta */
   [6] = "#67CC82", /* cyan    */
-  [7] = "#d2cddd", /* white   */
+  [7] = "#948d97", /* white   */
 
   /* 8 bright colors */
-  [8]  = "#938f9a",  /* black   */
-  [9]  = "#6A4AA5",  /* red     */
-  [10] = "#8A7497", /* green   */
-  [11] = "#8A5FE2", /* yellow  */
-  [12] = "#8F63E7", /* blue    */
-  [13] = "#7897AE", /* magenta */
-  [14] = "#67CC82", /* cyan    */
-  [15] = "#d2cddd", /* white   */
+  [8]  = "#65586c",  /* black   */
+  [9]  = "#8d70c1",  /* red     */
+  [10] = "#ac7ec8", /* green   */
+  [11] = "#ae9bd4", /* yellow  */
+  [12] = "#b2a0d6", /* blue    */
+  [13] = "#8cb3ce", /* magenta */
+  [14] = "#93d1a4", /* cyan    */
+  [15] = "#c3c2c3", /* white   */
 
   /* special colors */
   [256] = "#100c12", /* background */
-  [257] = "#d2cddd", /* foreground */
-  [258] = "#d2cddd",     /* cursor */
+  [257] = "#c3c2c3", /* foreground */
+  [258] = "#c3c2c3",     /* cursor */
 };
 
 /* Default colors (colorname index)

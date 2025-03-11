@@ -22,7 +22,7 @@
 
     background-color: @background;
     background: #100c12;
-    foreground: #d2cddd;
+    foreground: #c3c2c3;
     border-color: @background;
     spacing: 2;
 }
@@ -71,6 +71,11 @@
 #element {
     border: 0;
     padding: 1px;
+}
+
+#element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
 }
 
 #element.normal.normal {
