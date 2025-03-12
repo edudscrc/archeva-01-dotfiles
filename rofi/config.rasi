@@ -1,13 +1,11 @@
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * *
 * Author: Eduardo de Sá Coêlho Ribeiro Costa   	*
-* Github: eduds08							   	*
+* Github: edudscrc							   	*
 *											   	*
-* Rofi Version: 1.7.5						   	*
+* Rofi Version: 1.7.8-dirty						*
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
-
-@import "./colors-rofi.rasi"
 
 /*-----Configuration-----*/
 
@@ -20,21 +18,38 @@ configuration {
 /*-----Global-----*/
 
 * {
-	fg-highlight: @Text;
+	color0: #100c12;
+	color1: #ae9bd4;
+	color2: #8d70c1;
+	color3: #ac7ec8;
+	color4: #8A5FE2;
+	color5: #6A4AA5;
+	color6: #b2a0d6;
+	color7: #c3c2c3;
+	color8: #2a1f2f;
+	color9: #b6a5d8;
+	color10: #987ec7;
+	color11: #b48bcd;
+	color12: #966fe5;
+	color13: #7757b3;
+	color14: #baaada;
+	color15: #c9c8c9;
 
-	bg-entry: @Crust;
-	fg-entry: @Text;
-	fg-placeholder: #cba6f750;  // @Mauve with opacity
+	fg-highlight: @color7;
 
-	bg-listview: @Crust;
-	fg-element: @Overlay2;
+	bg-entry: @color0;
+	fg-entry: @color7;
+	fg-placeholder: #ae9bd450;
 
-	bg-element-selected: @Base;
-	fg-element-selected: @Lavender;
+	bg-listview: @color0;
+	fg-element: @color15;
 
-	border-color: @Lavender;
+	bg-element-selected: @color8;
+	fg-element-selected: @color3;
 
-    icon-size: 36px;
+	bg-inputbar: @color8;
+
+	border-color: @color3;
 
 	// border-radius
     br: 10px;
@@ -55,33 +70,27 @@ window {
 
 	children: [mainbox];
 
-	border: 0;
+	border: @border-size-window;
+	border-color: @border-color;
 
-	//border: @border-size-window;
 	border-radius: @br;
-	//border-color: @border-color;
+
+	width: 20%;
 }
 
 /*-----Main Box-----*/
 
 mainbox {
-    children: [left-box, listview];
-    orientation: horizontal;
+    children: [inputbar, listview];
+    orientation: vertical;
 }
 
 /*-----Input Bar-----*/
 
-left-box {
-	children: [inputbar];
-
-	background-image: url("~/.config/rofi/assets/panchiko.PNG", width);
-}
-
 inputbar {
-	//children: [entry, icon-inputbar];
 	children: [entry];
 
-	background-color: transparent;
+	background-color: @bg-inputbar;
 	border-radius: @br;
 }
 
@@ -90,41 +99,19 @@ entry {
 	placeholder-color: @fg-placeholder;
 	background-color: @bg-entry;
 
-	placeholder: "D>E>A>T>H>M>E>T>A>L";
+	placeholder: "Cracking crème brûlée";
 
 	text-transform: bold;
 
-	//border-radius: 10px 0 0 10px;
 	border-radius: @br;
 
 	padding: 12px;
-	//margin: 10px 0 10px 15px;
 	margin: 10px;
     
 	vertical-align: 0.5;
 
 	border: 0;
-	//border: 2px 0 2px 2px;
-	//border-color: @border-color;
 }
-
-//icon-inputbar {
-//	filename: "~/.config/rofi/assets/cat.png";
-//	size: @icon-size;
-//
-//	background-color: @bg-entry;
-//
-//	margin: 10 15 10 0;
-//	padding: 5 10 5 0;
-//
-//	expand: false;
-//
-//	border-radius: 0 10px 10px 0;
-//
-//	border: 0;
-//	//border: 2px 2px 2px 0;
-//	//border-color: @border-color;
-//}
 
 /*-----List View-----*/
 
@@ -133,7 +120,6 @@ listview {
 
 	// border: 0 0 0 2px;  // Removes the dashed line
 	border: 0;
-	//border-color: @border-color;
 	lines: 8;   // 8 elements "per page"
 
 	background-color: @bg-listview;

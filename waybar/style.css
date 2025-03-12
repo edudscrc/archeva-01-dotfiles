@@ -8,66 +8,62 @@
 */
 
 /* Pywal generated */
-@define-color foreground #c3c2c3;
-@define-color background #100c12;
-@define-color cursor #c3c2c3;
-
 @define-color color0 #100c12;
-@define-color color1 #6A4AA5;
-@define-color color2 #8A7497;
-@define-color color3 #8A5FE2;
-@define-color color4 #8F63E7;
-@define-color color5 #7897AE;
-@define-color color6 #67CC82;
-@define-color color7 #948d97;
-@define-color color8 #65586c;
-@define-color color9 #8d70c1;
-@define-color color10 #ac7ec8;
-@define-color color11 #ae9bd4;
-@define-color color12 #b2a0d6;
-@define-color color13 #8cb3ce;
-@define-color color14 #93d1a4;
-@define-color color15 #c3c2c3;
+@define-color color1 #ae9bd4;
+@define-color color2 #8d70c1;
+@define-color color3 #ac7ec8;
+@define-color color4 #8A5FE2;
+@define-color color5 #6A4AA5;
+@define-color color6 #b2a0d6;
+@define-color color7 #c3c2c3;
+@define-color color8 #2a1f2f;
+@define-color color9 #b6a5d8;
+@define-color color10 #987ec7;
+@define-color color11 #b48bcd;
+@define-color color12 #966fe5;
+@define-color color13 #7757b3;
+@define-color color14 #baaada;
+@define-color color15 #c9c8c9;
 /*---------------------------*/
 
-@define-color modules_background @background;
-@define-color modules_border @background;
+@define-color modules_background #100c12;
+@define-color modules_border #100c12;
 
-@define-color archicon_idle @color10;
-@define-color archicon_hover @color12;
+@define-color archicon_idle #ac7ec8;
+@define-color archicon_hover #b2a0d6;
 
-@define-color workspaces_button_idle @color8;
-@define-color workspaces_button_hover @color10;
+@define-color workspaces_button_idle #2a1f2f;
+@define-color workspaces_button_hover #ac7ec8;
 
-@define-color spotify_idle @color10;
-@define-color spotify_hover @color12;
+@define-color spotify_idle #ac7ec8;
+@define-color spotify_hover #b2a0d6;
 
-@define-color tray_menu @background;
-@define-color tray_menu_border @background;
-@define-color tray_menu_item @color12;
-@define-color tray_menu_item_hover @background;
-@define-color tray_menu_item_hover_background @color12;
+@define-color tray_menu #100c12;
+@define-color tray_menu_border #100c12;
+@define-color tray_menu_item #c9c8c9;
+@define-color tray_menu_item_hover #100c12;
+@define-color tray_menu_item_hover_background #b2a0d6;
 
-@define-color clock_idle @color10;
-@define-color clock_hover @color12;
+@define-color clock_idle #ac7ec8;
+@define-color clock_hover #b2a0d6;
 
-@define-color temperature_idle @color10;
-@define-color temperature_hover @color12;
+@define-color temperature_idle #ac7ec8;
+@define-color temperature_hover #b2a0d6;
 
-@define-color sound_idle @color10;
-@define-color sound_hover @color12;
+@define-color sound_idle #ac7ec8;
+@define-color sound_hover #b2a0d6;
 
-@define-color bluetooth_idle @color10;
-@define-color bluetooth_hover @color12;
+@define-color bluetooth_idle #ac7ec8;
+@define-color bluetooth_hover #b2a0d6;
 
-@define-color network_idle @color10;
-@define-color network_hover @color12;
+@define-color network_idle #ac7ec8;
+@define-color network_hover #b2a0d6;
 
-@define-color power_idle @color10;
-@define-color power_hover @color12;
+@define-color power_idle #ac7ec8;
+@define-color power_hover #b2a0d6;
 
-@define-color tooltip_background @background;
-@define-color tooltip_text @color12;
+@define-color tooltip_background #100c12;
+@define-color tooltip_text #c9c8c9;
 
 /*-----GLOBAL-----*/
 
