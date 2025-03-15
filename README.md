@@ -1,5 +1,5 @@
 # ArchEVA-01
-[Arch Linux + Hyprland] Dotfiles inspired in EVA-01 from Neon Genesis Evangelion.
+[Arch Linux + Hyprland] Dotfiles for Hyprland.
 
 ## Installation
 <pre>
