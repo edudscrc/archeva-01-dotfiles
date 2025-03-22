@@ -64,7 +64,7 @@
     	"tooltip": false
     },
     "custom/wl-gammarelay-brightness": {
-        "format": "󰃞 {}%",
+        "format": "󰃠 {}%",
         "tooltip": false,
         "exec": "wl-gammarelay-rs watch {bp}",
         "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
