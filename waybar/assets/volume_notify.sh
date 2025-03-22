@@ -1,13 +1,7 @@
 #!/bin/bash
 
-# Ícones para as notificações
-ICON_VOLUME="/usr/share/icons/Adwaita/symbolic/status/audio-volume-high-symbolic.svg"
-ICON_MUTE="/usr/share/icons/Adwaita/symbolic/status/audio-volume-muted-symbolic.svg"
-
-# Limite máximo de volume (100%)
 MAX_VOLUME=100
 
-# Verifica a ação passada como argumento
 case "$1" in
   up)
     # Obtém o volume atual
@@ -31,25 +25,3 @@ case "$1" in
     exit 1
     ;;
 esac
-
-# Obtém o volume atual e o estado de mudo
-VOLUME=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $2 * 100}' | awk -F. '{print $1}')
-MUTED=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -q '\[MUTED\]' && echo "true" || echo "false")
-
-# Define o texto e o ícone para a notificação
-if [ "$MUTED" = "true" ]; then
-  TEXT="Volume: Muted"
-  ICON=$ICON_MUTE
-else
-  TEXT="Volume: ${VOLUME}%"
-  ICON=$ICON_VOLUME
-fi
-
-# Check if the icon file exists before sending the notification
-if [ ! -f "$ICON" ]; then
-  echo "Icon file $ICON not found, using default icon."
-  ICON="/usr/share/icons/Adwaita/symbolic/status/audio-volume-high-symbolic.svg" # Default icon
-fi
-
-# Envia a notificação com o dunst
-echo "$TEXT" | dunstify -i "$ICON" -r 2593 -u low "$TEXT"

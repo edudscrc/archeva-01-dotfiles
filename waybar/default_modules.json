@@ -12,6 +12,7 @@
     ],
     "modules-right": [
         "temperature",
+        "custom/wl-gammarelay-brightness",
         "pulseaudio#sound",
         "group/group-end",
         "custom/power"
@@ -36,18 +37,19 @@
         "tooltip": false
     },
 
+
     "clock": {
-        "interval": 30,
         "format": "{:%a %d %b %H:%M}",
         "tooltip-format": "<tt>{calendar}</tt>",
         "calendar": {
-        	"mode": "month",
-        	"format": {
-        		"months": "<span color='#966BF2'><b>{}</b></span>",
-                "days": "<span color='#63BF7A'><b>{}</b></span>",
-                "weekdays": "<span color='#B6F2D0'><b>{}</b></span>",
-                "today": "<span color='#966BF2'><b>{}</b></span>"
-        	}
+            "mode": "year",
+            "mode-mon-col": 3,
+            "format": {
+                "months": "<span color='#ac7ec8'><b>{}</b></span>",
+                "days": "<span color='#8d70c1'><b>{}</b></span>",
+                "weekdays": "<span color='#b2a0d6'><b>{}</b></span>",
+                "today": "<span color='#c9c8c9'><b><u>{}</u></b></span>"
+            }
         },
         "actions": {
             "on-click": "shift_reset",
@@ -55,12 +57,18 @@
             "on-scroll-down": "shift_down"
         }
     },
-
     "temperature": {
         "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp3_input",
     	"interval": 2,
     	"format": " {temperatureC}°C",
     	"tooltip": false
+    },
+    "custom/wl-gammarelay-brightness": {
+        "format": "󰃞 {}%",
+        "tooltip": false,
+        "exec": "wl-gammarelay-rs watch {bp}",
+        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
+        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
     },
     "pulseaudio#sound": {
 	    "format": "{icon} {volume}%",

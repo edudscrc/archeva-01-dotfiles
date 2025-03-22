@@ -50,6 +50,9 @@
 @define-color temperature_idle #ac7ec8;
 @define-color temperature_hover #b2a0d6;
 
+@define-color brightness_idle #ac7ec8;
+@define-color brightness_hover #b2a0d6;
+
 @define-color sound_idle #ac7ec8;
 @define-color sound_hover #b2a0d6;
 
@@ -214,6 +217,21 @@
 
 #temperature:hover {
 	color: @temperature_hover;
+
+	transition: color 0.3s;
+}
+
+/*-----CUSTOM-WL-GAMMARELAY-BRIGHTNESS-----*/
+
+#custom-wl-gammarelay-brightness {
+	color: @brightness_idle;
+
+	padding: 0 6px;
+	transition: color 0.3s;
+}
+
+#custom-wl-gammarelay-brightness:hover {
+	color: @brightness_hover;
 
 	transition: color 0.3s;
 }
