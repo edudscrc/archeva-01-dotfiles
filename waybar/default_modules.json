@@ -76,10 +76,8 @@
         "format-icons": {
             "default": ["", "", " "]
         },
-        "on-click": "~/.config/waybar/assets/volume_notify.sh mute",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-click-right": "pavucontrol",
-        "on-scroll-down": "~/.config/waybar/assets/volume_notify.sh down",
-        "on-scroll-up": "~/.config/waybar/assets/volume_notify.sh up",
         "tooltip": false
     },
     "group/group-end": {
