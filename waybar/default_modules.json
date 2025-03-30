@@ -45,10 +45,10 @@
             "mode": "year",
             "mode-mon-col": 3,
             "format": {
-                "months": "<span color='#ac7ec8'><b>{}</b></span>",
-                "days": "<span color='#8d70c1'><b>{}</b></span>",
-                "weekdays": "<span color='#b2a0d6'><b>{}</b></span>",
-                "today": "<span color='#c9c8c9'><b><u>{}</u></b></span>"
+                "months": "<span color='#65D070'><b>{}</b></span>",
+                "days": "<span color='#9C66FF'><b>{}</b></span>",
+                "weekdays": "<span color='#FFA500'><b>{}</b></span>",
+                "today": "<span color='#E6E6E6'><b><u>{}</u></b></span>"
             }
         },
         "actions": {

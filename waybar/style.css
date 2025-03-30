@@ -7,65 +7,46 @@
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
-/* Pywal generated */
-@define-color color0 #100c12;
-@define-color color1 #9b7cdb;
-@define-color color2 #6a4ac7;
-@define-color color3 #ac7ec8;
-@define-color color4 #8a4fe2;
-@define-color color5 #5e3b8f;
-@define-color color6 #b2a0d6;
-@define-color color7 #c9c8c9;
-@define-color color8 #1d1620;
-@define-color color9 #a589df;
-@define-color color10 #795ccd;
-@define-color color11 #b48bcd;
-@define-color color12 #9661e5;
-@define-color color13 #6c44a5;
-@define-color color14 #baaada;
-@define-color color15 #cecdce;
-/*---------------------------*/
+@define-color modules_background #12101A;
+@define-color modules_border #12101A;
 
-@define-color modules_background #100c12;
-@define-color modules_border #100c12;
+@define-color archicon_idle #65D070;
+@define-color archicon_hover #E6E6E6;
 
-@define-color archicon_idle #ac7ec8;
-@define-color archicon_hover #b2a0d6;
+@define-color workspaces_button_idle #262330;
+@define-color workspaces_button_hover #FF8C00;
 
-@define-color workspaces_button_idle #1d1620;
-@define-color workspaces_button_hover #ac7ec8;
+@define-color spotify_idle #875CE4;
+@define-color spotify_hover #E6E6E6;
 
-@define-color spotify_idle #ac7ec8;
-@define-color spotify_hover #b2a0d6;
+@define-color tray_menu #12101A;
+@define-color tray_menu_border #12101A;
+@define-color tray_menu_item #E6E6E6;
+@define-color tray_menu_item_hover #E6E6E6;
+@define-color tray_menu_item_hover_background #2F2D3C;
 
-@define-color tray_menu #100c12;
-@define-color tray_menu_border #100c12;
-@define-color tray_menu_item #c9c8c9;
-@define-color tray_menu_item_hover #100c12;
-@define-color tray_menu_item_hover_background #b2a0d6;
+@define-color clock_idle #65D070;
+@define-color clock_hover #E6E6E6;
 
-@define-color clock_idle #ac7ec8;
-@define-color clock_hover #b2a0d6;
+@define-color temperature_idle #875CE4;
+@define-color temperature_hover #E6E6E6;
 
-@define-color temperature_idle #ac7ec8;
-@define-color temperature_hover #b2a0d6;
+@define-color brightness_idle #FF8C00;
+@define-color brightness_hover #E6E6E6;
 
-@define-color brightness_idle #ac7ec8;
-@define-color brightness_hover #b2a0d6;
+@define-color sound_idle #875CE4;
+@define-color sound_hover #E6E6E6;
 
-@define-color sound_idle #ac7ec8;
-@define-color sound_hover #b2a0d6;
+@define-color bluetooth_idle #65D070;
+@define-color bluetooth_hover #E6E6E6;
 
-@define-color bluetooth_idle #ac7ec8;
-@define-color bluetooth_hover #b2a0d6;
+@define-color network_idle #65D070;
+@define-color network_hover #E6E6E6;
 
-@define-color network_idle #ac7ec8;
-@define-color network_hover #b2a0d6;
+@define-color power_idle #875CE4;
+@define-color power_hover #E6E6E6;
 
-@define-color power_idle #ac7ec8;
-@define-color power_hover #b2a0d6;
-
-@define-color tooltip_background #100c12;
+@define-color tooltip_background #12101A;
 @define-color tooltip_text #c9c8c9;
 
 /*-----GLOBAL-----*/

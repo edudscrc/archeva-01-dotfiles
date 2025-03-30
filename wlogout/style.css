@@ -11,11 +11,11 @@ button {
 	border-style: solid;
 	border-width: 2px;
     border-radius: 6px;
-    border-color: #36293d;
+    border-color: #875CE4;
 
-	text-decoration-color: #ac7ec8;
-    color: #ac7ec8;
-	background-color: #100c12;
+	text-decoration-color: #875CE4;
+    color: #875CE4;
+	background-color: #12101A;
 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -25,8 +25,8 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #1d1620;
-	border-color: #ac7ec8;
+	background-color: #1B1823;
+	border-color: #65D070;
 	outline-style: none;
 }
 

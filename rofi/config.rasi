@@ -18,24 +18,24 @@ configuration {
 /*-----Global-----*/
 
 * {
-	color0: #100c12;
-	color1: #9b7cdb;
-	color2: #6a4ac7;
-	color3: #ac7ec8;
-	color4: #8a4fe2;
-	color5: #5e3b8f;
-	color6: #b2a0d6;
-	color7: #c9c8c9;
-	color8: #1d1620;
-	color9: #a589df;
-	color10: #795ccd;
-	color11: #b48bcd;
-	color12: #9661e5;
-	color13: #6c44a5;
-	color14: #baaada;
-	color15: #cecdce;
+	color0: #1B1823;
+	color1: #FF8C00;
+	color2: #65D070;
+	color3: #FFA500;
+	color4: #7B3FCC;
+	color5: #E45ABF;
+	color6: #4EB8AC;
+	color7: #CBCBCB;
+	color8: #262330;
+	color9: #FFA869;
+	color10: #8AE4A2;
+	color11: #FFBD4E;
+	color12: #9C66FF;
+	color13: #F38BD3;
+	color14: #70DCC2;
+	color15: #FFFFFF;
 
-	fg-highlight: @color7;
+	fg-highlight: @color1;
 
 	bg-entry: @color0;
 	fg-entry: @color7;
@@ -45,11 +45,11 @@ configuration {
 	fg-element: @color15;
 
 	bg-element-selected: @color8;
-	fg-element-selected: @color3;
+	fg-element-selected: @color2;
 
 	bg-inputbar: @color8;
 
-	border-color: @color3;
+	border-color: @color4;
 
 	// border-radius
     br: 10px;
