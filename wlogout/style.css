@@ -15,7 +15,7 @@ button {
 
 	text-decoration-color: #875CE4;
     color: #875CE4;
-	background-color: #12101A;
+	background-color: #1A1525;
 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -25,8 +25,8 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #1B1823;
-	border-color: #65D070;
+	background-color: #1F192B;
+	border-color: #64DD17;
 	outline-style: none;
 }
 
