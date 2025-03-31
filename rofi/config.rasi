@@ -22,9 +22,9 @@ configuration {
 	color1: #FF5722;
 	color2: #C17BFF;
 	color3: #A3FF00;
-	color4: #8B4DFF;
+	color4: #983ACE;
 	color5: #9356E5;
-	color6: #4CAF50;
+	color6: #65C880;
 	color7: #C3A5E0;
 	color8: #1F192B;
 	color9: #FF8A60;
@@ -39,7 +39,7 @@ configuration {
 
 	bg-entry: @color0;
 	fg-entry: @color7;
-	fg-placeholder: #4CAF5050;
+	fg-placeholder: #65C88050;
 
 	bg-listview: @color0;
 	fg-element: @color15;
