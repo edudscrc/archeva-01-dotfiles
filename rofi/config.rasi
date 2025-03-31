@@ -35,14 +35,14 @@ configuration {
 	color14: #7DCF80;
 	color15: #DBC9EC;
 
-	fg-highlight: @color1;
+	fg-highlight: @color2;
 
 	bg-entry: @color0;
-	fg-entry: @color7;
+	fg-entry: @color2;
 	fg-placeholder: #65C88050;
 
 	bg-listview: @color0;
-	fg-element: @color15;
+	fg-element: @color4;
 
 	bg-element-selected: @color8;
 	fg-element-selected: @color3;
@@ -50,7 +50,7 @@ configuration {
 
 	bg-inputbar: @color8;
 
-	border-color: @color4;
+	border-color: #2A233D;
 
 	// border-radius
     br: 10px;
@@ -154,9 +154,9 @@ element-text {
 }
 
 element selected.normal {
-	background-color: @bg-element-selected;
+	background-color: @bg-listview;
 
-	border: @border-size-element-selected;
+	border: 0 0 0 2px;
 	border-color: @border-color-element-selected;
 }
 

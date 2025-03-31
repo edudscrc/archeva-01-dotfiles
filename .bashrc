@@ -27,4 +27,4 @@ parse_git_branch() {
     git branch 2>/dev/null | grep '*' | sed 's/* //'
 }
 
-PS1="[$BLUE\u@\h $CYAN\w$RESET]$RED\$(parse_git_branch | sed 's/^/  /') $YELLOW\$$RESET "
+PS1="[$BLUE\u@\h $CYAN\w$RESET]$MAGENTA\$(parse_git_branch | sed 's/^/  /') $YELLOW\$$RESET "
