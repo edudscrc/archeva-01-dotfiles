@@ -11,7 +11,6 @@
         "clock"
     ],
     "modules-right": [
-        "temperature",
         "custom/wl-gammarelay-brightness",
         "pulseaudio#sound",
         "group/group-end",
@@ -56,12 +55,6 @@
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
         }
-    },
-    "temperature": {
-        "hwmon-path": "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp3_input",
-    	"interval": 2,
-    	"format": " {temperatureC}°C",
-    	"tooltip": false
     },
     "custom/wl-gammarelay-brightness": {
         "format": "󰃠 {}%",

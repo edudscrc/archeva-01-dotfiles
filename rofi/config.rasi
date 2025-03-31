@@ -19,34 +19,34 @@ configuration {
 
 * {
 	color0: #1A1525;
-	color1: #FF8C00;
-	color2: #966BF2;
-	color3: #64DD17;
-	color4: #875CE4;
-	color5: #E85DA2;
-	color6: #63BF7A;
-	color7: #E6E6E6;
+	color1: #FF5722;
+	color2: #C17BFF;
+	color3: #A3FF00;
+	color4: #8B4DFF;
+	color5: #9356E5;
+	color6: #4CAF50;
+	color7: #C3A5E0;
 	color8: #1F192B;
-	color9: #FFB84D;
-	color10: #B99FF6;
-	color11: #92E85C;
-	color12: #AC8FEC;
-	color13: #F08EBE;
-	color14: #8FD6A0;
-	color15: #CFCFCF;
+	color9: #FF8A60;
+	color10: #D9A6FF;
+	color11: #C4FF5C;
+	color12: #B285FF;
+	color13: #B585F2;
+	color14: #7DCF80;
+	color15: #DBC9EC;
 
 	fg-highlight: @color1;
 
 	bg-entry: @color0;
 	fg-entry: @color7;
-	fg-placeholder: #9b7cdb50;
+	fg-placeholder: #4CAF5050;
 
 	bg-listview: @color0;
 	fg-element: @color15;
 
 	bg-element-selected: @color8;
-	fg-element-selected: @color6;
-	border-color-element-selected: @color6;
+	fg-element-selected: @color3;
+	border-color-element-selected: @color3;
 
 	bg-inputbar: @color8;
 

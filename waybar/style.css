@@ -10,44 +10,41 @@
 @define-color modules_background #1A1525;
 @define-color modules_border #2A233D;
 
-@define-color archicon_idle #63BF7A;
-@define-color archicon_hover #E6E6E6;
+@define-color archicon_idle #8B4DFF;
+@define-color archicon_hover #C3A5E0;
 
+@define-color workspaces_button_hover #8B4DFF;
 @define-color workspaces_button_idle #2A233D;
-@define-color workspaces_button_hover #64DD17;
 
-@define-color spotify_idle #875CE4;
-@define-color spotify_hover #E6E6E6;
+@define-color spotify_idle #A3FF00;
+@define-color spotify_hover #C3A5E0;
 
 @define-color tray_menu #1A1525;
-@define-color tray_menu_border #1A1525;
-@define-color tray_menu_item #E6E6E6;
-@define-color tray_menu_item_hover #E6E6E6;
+@define-color tray_menu_border #2A233D;
+@define-color tray_menu_item #C3A5E0;
+@define-color tray_menu_item_hover #C3A5E0;
 @define-color tray_menu_item_hover_background #2A233D;
 
-@define-color clock_idle #63BF7A;
-@define-color clock_hover #E6E6E6;
+@define-color clock_idle #8B4DFF;
+@define-color clock_hover #C3A5E0;
 
-@define-color temperature_idle #64DD17;
-@define-color temperature_hover #E6E6E6;
+@define-color brightness_idle #A3FF00;
+@define-color brightness_hover #C3A5E0;
 
-@define-color brightness_idle #FF8C00;
-@define-color brightness_hover #E6E6E6;
+@define-color sound_idle #A3FF00;
+@define-color sound_hover #C3A5E0;
 
-@define-color sound_idle #875CE4;
-@define-color sound_hover #E6E6E6;
+@define-color bluetooth_idle #8B4DFF;
+@define-color bluetooth_hover #C3A5E0;
 
-@define-color bluetooth_idle #64DD17;
-@define-color bluetooth_hover #E6E6E6;
+@define-color network_idle #8B4DFF;
+@define-color network_hover #C3A5E0;
 
-@define-color network_idle #64DD17;
-@define-color network_hover #E6E6E6;
-
-@define-color power_idle #875CE4;
-@define-color power_hover #E6E6E6;
+@define-color power_idle #8B4DFF;
+@define-color power_hover #C3A5E0;
 
 @define-color tooltip_background #1A1525;
-@define-color tooltip_text #E6E6E6;
+@define-color tooltip_text #C3A5E0;
 
 /*-----GLOBAL-----*/
 
@@ -183,21 +180,6 @@
 
 #clock:hover {
 	color: @clock_hover;
-
-	transition: color 0.3s;
-}
-
-/*-----TEMPERATURE-----*/
-
-#temperature {
-	color: @temperature_idle;
-
-	padding: 0 6px;
-	transition: color 0.3s;
-}
-
-#temperature:hover {
-	color: @temperature_hover;
 
 	transition: color 0.3s;
 }
