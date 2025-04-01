@@ -156,7 +156,7 @@ element-text {
 element selected.normal {
 	background-color: @bg-listview;
 
-	border: 0 0 0 2px;
+	border: @border-size-element-selected;
 	border-color: @border-color-element-selected;
 }
 
