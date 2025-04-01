@@ -11,6 +11,7 @@ DOTFILES=(
     ["wlogout"]="$CONFIG_DIR/wlogout"
     ["kitty"]="$CONFIG_DIR/kitty"
     ["fastfetch"]="$CONFIG_DIR/fastfetch"
+    ["dunst"]="$CONFIG_DIR/dunst"
 )
 
 declare -A HOME_FILES
