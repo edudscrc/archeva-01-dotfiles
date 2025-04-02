@@ -1,5 +1,6 @@
 # ArchEVA-01
 [Arch Linux + Hyprland] Dotfiles for Hyprland.
+Theme with colors inspired by EVA-01 from the anime Neon Genesis Evangelion.
 
 ## Installation
 <pre>
