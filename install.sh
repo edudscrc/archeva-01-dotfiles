@@ -17,6 +17,7 @@ DOTFILES=(
 declare -A HOME_FILES
 HOME_FILES=(
     [".bashrc"]="$HOME/.bashrc"
+    ["archeva-01.theme"]="$HOME/.config/btop/themes/archeva-01.theme"
 )
 
 echo "Setting up dotfiles..."

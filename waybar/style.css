@@ -13,7 +13,7 @@
 @define-color archicon_idle #983ACE;
 @define-color archicon_hover #C3A5E0;
 
-@define-color workspaces_button_hover #983ACE;
+@define-color workspaces_button_hover #65C880;
 @define-color workspaces_button_idle #2A233D;
 
 @define-color spotify_idle #A3FF00;
@@ -34,10 +34,10 @@
 @define-color sound_idle #A3FF00;
 @define-color sound_hover #C3A5E0;
 
-@define-color bluetooth_idle #983ACE;
+@define-color bluetooth_idle #FF5722;
 @define-color bluetooth_hover #C3A5E0;
 
-@define-color network_idle #983ACE;
+@define-color network_idle #FF5722;
 @define-color network_hover #C3A5E0;
 
 @define-color power_idle #983ACE;

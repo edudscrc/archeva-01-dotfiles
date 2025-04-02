@@ -18,6 +18,8 @@
     "break",
     {
       "type": "title",
+      "key": ">",
+      "keyColor": "blue",
       "color": {
         "host": "yellow",
         "at": "yellow",
@@ -27,44 +29,48 @@
     "break",
     {
       "type": "os",
-      "key": "*",
+      "key": ">",
       "keyColor": "blue",
       "outputColor": "yellow"
     },
     "break",
     {
       "type": "wm",
-      "key": "*",
-      "keyColor": "yellow",
+      "key": ">",
+      "keyColor": "red",
       "outputColor": "blue"
     },
     {
       "type": "theme",
-      "key": "*",
-      "keyColor": "yellow",
+      "key": ">",
+      "keyColor": "red",
       "outputColor": "blue"
     },
     "break",
     {
       "type": "cpu",
-      "key": "*",
-      "keyColor": "yellow",
+      "key": ">",
+      "keyColor": "red",
       "outputColor": "blue"
     },
     {
       "type": "gpu",
-      "key": "*",
-      "keyColor": "yellow",
+      "key": ">",
+      "keyColor": "red",
       "outputColor": "blue"
     },
     "break",
     {
       "type": "memory",
-      "key": "*",
-      "keyColor": "yellow",
-      "outputColor": "blue"
+      "key": ">",
+      "keyColor": "red",
+      "outputColor": "cyan"
     },
     "break",
-    "colors"
+    {
+      "type": "colors",
+      "symbol": "circle"
+    },
+    "break"
   ]
 }
