@@ -11,10 +11,10 @@ button {
 	border-style: solid;
 	border-width: 2px;
     border-radius: 6px;
-    border-color: #893FCB;
+    border-color: #ED45B8;
 
-	text-decoration-color: #893FCB;
-    color: #893FCB;
+	text-decoration-color: #ED45B8;
+    color: #ED45B8;
 	background-color: #1A1525;
 
 	background-repeat: no-repeat;
@@ -25,8 +25,8 @@ button {
 }
 
 button:focus, button:active, button:hover {
-	background-color: #2A233D;
-	border-color: #66C18C;
+	background-color: #1F192B;
+	border-color: #4DCC90;
 	outline-style: none;
 }
 
