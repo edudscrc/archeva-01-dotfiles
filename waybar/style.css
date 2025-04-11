@@ -10,13 +10,13 @@
 @define-color modules_background #1A1525;
 @define-color modules_border #2A233D;
 
-@define-color archicon_idle #983ACE;
+@define-color archicon_idle #893FCB;
 @define-color archicon_hover #C3A5E0;
 
-@define-color workspaces_button_hover #65C880;
+@define-color workspaces_button_hover #66C18C;
 @define-color workspaces_button_idle #2A233D;
 
-@define-color spotify_idle #A3FF00;
+@define-color spotify_idle #B7F529;
 @define-color spotify_hover #C3A5E0;
 
 @define-color tray_menu #1A1525;
@@ -25,22 +25,22 @@
 @define-color tray_menu_item_hover #C3A5E0;
 @define-color tray_menu_item_hover_background #2A233D;
 
-@define-color clock_idle #983ACE;
+@define-color clock_idle #893FCB;
 @define-color clock_hover #C3A5E0;
 
-@define-color brightness_idle #A3FF00;
+@define-color brightness_idle #66C18C;
 @define-color brightness_hover #C3A5E0;
 
-@define-color sound_idle #A3FF00;
+@define-color sound_idle #66C18C;
 @define-color sound_hover #C3A5E0;
 
-@define-color bluetooth_idle #FF5722;
+@define-color bluetooth_idle #F5A623;
 @define-color bluetooth_hover #C3A5E0;
 
-@define-color network_idle #FF5722;
+@define-color network_idle #F5A623;
 @define-color network_hover #C3A5E0;
 
-@define-color power_idle #983ACE;
+@define-color power_idle #893FCB;
 @define-color power_hover #C3A5E0;
 
 @define-color tooltip_background #1A1525;
