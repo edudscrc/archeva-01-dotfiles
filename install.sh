@@ -22,21 +22,14 @@ HOME_FILES=(
 
 echo "Setting up dotfiles..."
 
-# Symlink .config files
 for folder in "${!DOTFILES[@]}"; do
     TARGET="${DOTFILES[$folder]}"
     SOURCE="$DOTFILES_DIR/$folder"
-
-    if [ -d "$TARGET" ] && [ ! -L "$TARGET" ]; then
-        echo "Backing up existing $TARGET to $TARGET.bak"
-        mv "$TARGET" "$TARGET.bak"
-    fi
 
     ln -sfn "$SOURCE" "$TARGET"
     echo "Linked $SOURCE -> $TARGET"
 done
 
-# Symlink home dotfiles
 for file in "${!HOME_FILES[@]}"; do
     TARGET="${HOME_FILES[$file]}"
     SOURCE="$DOTFILES_DIR/$file"
