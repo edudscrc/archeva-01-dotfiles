@@ -5,7 +5,7 @@ theme[main_bg]="#1F192B"
 theme[main_fg]="#4DCC90"
 
 # Title color for boxes
-theme[title]="#8AE849"
+theme[title]="#EE66C3"
 
 # Highlight color for keyboard shortcuts
 theme[hi_fg]="#E77B2A"
@@ -14,19 +14,19 @@ theme[hi_fg]="#E77B2A"
 theme[selected_bg]="#2A233D"
 
 # Foreground color of selected item in processes box
-theme[selected_fg]="#8AE849"
+theme[selected_fg]="#EE66C3"
 
 # Color of inactive/disabled text
 theme[inactive_fg]="#2A233D"
 
 # Color of text appearing on top of graphs, i.e uptime and current network graph scaling
-theme[graph_text]="#8AE849"
+theme[graph_text]="#EE66C3"
 
 # Background color of the percentage meters
 theme[meter_bg]="#2A233D"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#8AE849"
+theme[proc_misc]="#EE66C3"
 
 # CPU, Memory, Network, Proc box outline colors
 theme[cpu_box]="#2A233D"
@@ -38,42 +38,42 @@ theme[proc_box]="#2A233D"
 theme[div_line]="#2A233D"
 
 # Temperature graph color (Green -> Yellow -> Red)
-theme[temp_start]="#A8DE82"
+theme[temp_start]="#8AE849"
 theme[temp_mid]="#E6964F"
 theme[temp_end]="#E77B2A"
 
 # CPU graph colors (Teal -> Lavender)
-theme[cpu_start]="#A8DE82"
+theme[cpu_start]="#8AE849"
 theme[cpu_mid]="#E6964F"
 theme[cpu_end]="#E77B2A"
 
 # Mem/Disk free meter (Mauve -> Lavender -> Blue)
-theme[free_start]="#A8DE82"
+theme[free_start]="#8AE849"
 theme[free_mid]="#E6964F"
 theme[free_end]="#E77B2A"
 
 # Mem/Disk cached meter (Sapphire -> Lavender)
-theme[cached_start]="#A8DE82"
+theme[cached_start]="#8AE849"
 theme[cached_mid]="#E6964F"
 theme[cached_end]="#E77B2A"
 
 # Mem/Disk available meter (Peach -> Red)
-theme[available_start]="#A8DE82"
+theme[available_start]="#8AE849"
 theme[available_mid]="#E6964F"
 theme[available_end]="#E77B2A"
 
 # Mem/Disk used meter (Green -> Sky)
-theme[used_start]="#A8DE82"
+theme[used_start]="#8AE849"
 theme[used_mid]="#E6964F"
 theme[used_end]="#E77B2A"
 
 # Download graph colors (Peach -> Red)
-theme[download_start]="#A8DE82"
+theme[download_start]="#8AE849"
 theme[download_mid]="#E6964F"
 theme[download_end]="#E77B2A"
 
 # Upload graph colors (Green -> Sky)
-theme[upload_start]="#A8DE82"
+theme[upload_start]="#8AE849"
 theme[upload_mid]="#E6964F"
 theme[upload_end]="#E77B2A"
 
