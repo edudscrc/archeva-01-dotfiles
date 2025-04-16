@@ -3,19 +3,19 @@
 
 ## Preview
 ### Hyprlock:
-![Hyprlock Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/hyprlock.png)
+![ArchEVA-01 Hyprlock Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/hyprlock.png)
 
 ### Desktop:
-![Hyprlock Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/desktop.png)
+![ArchEVA-01 Desktop Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/desktop.png)
 
 ### Apps:
-![Hyprlock Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/apps.png)
+![ArchEVA-01 Apps Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/apps.png)
 
 ### Rofi:
-![Hyprlock Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/rofi.png)
+![ArchEVA-01 Rofi Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/rofi.png)
 
 ### Wlogout:
-![Hyprlock Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/wlogout.png)
+![ArchEVA-01 Wlogout Screenshot](https://github.com/edudscrc/archeva-01-dotfiles/blob/main/images/wlogout.png)
 
 ## Installation
 ```bash
