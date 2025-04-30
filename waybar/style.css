@@ -10,13 +10,13 @@
 @define-color modules_background #1A1525;
 @define-color modules_border #2A233D;
 
-@define-color archicon_idle #ED45B8;
+@define-color archicon_idle #0B80E8;
 @define-color archicon_hover #CC81F1;
 
-@define-color workspaces_button_hover #4DCC90;
-@define-color workspaces_button_idle #2A233D;
+@define-color workspaces_button_hover #0B80E8;
+@define-color workspaces_button_idle #CC81F1;
 
-@define-color spotify_idle #8AE849;
+@define-color spotify_idle #A55EF0;
 @define-color spotify_hover #CC81F1;
 
 @define-color tray_menu #1A1525;
@@ -25,22 +25,22 @@
 @define-color tray_menu_item_hover #CC81F1;
 @define-color tray_menu_item_hover_background #2A233D;
 
-@define-color clock_idle #ED45B8;
+@define-color clock_idle #0B80E8;
 @define-color clock_hover #CC81F1;
 
-@define-color brightness_idle #4DCC90;
+@define-color brightness_idle #0B80E8;
 @define-color brightness_hover #CC81F1;
 
-@define-color sound_idle #4DCC90;
+@define-color sound_idle #0B80E8;
 @define-color sound_hover #CC81F1;
 
-@define-color bluetooth_idle #F5A623;
+@define-color bluetooth_idle #000000;
 @define-color bluetooth_hover #CC81F1;
 
-@define-color network_idle #F5A623;
+@define-color network_idle #000000;
 @define-color network_hover #CC81F1;
 
-@define-color power_idle #ED45B8;
+@define-color power_idle #000000;
 @define-color power_hover #CC81F1;
 
 @define-color tooltip_background #1A1525;
@@ -56,45 +56,79 @@
 }
 
 .bar_2k {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .bar_1080p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 #waybar {
-	background-color: @transparent;
+	background-color: @modules_background;
+	margin: 0;
+    padding: 0;
 }
 
-.modules-left, .modules-center, .modules-right {
-	background-color: @modules_background;
+.modules-center {
+}
+
+.modules-left {
+	margin-left: 6px;
+}
+
+.modules-right {
+	margin-right: 6px;
+}
+
+#group-left {
 	border: 2px solid @modules_border;
-	border-radius: 6px;
+	border-radius: 2px;
 
-	margin: 6px;
+	/* background-color: @modules_background; */
 
-	padding: 2px 6px;
+	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
+
+	margin-top: 4px;
+	margin-bottom: 6px;
+
+	margin-right: 6px;
+
+	/* padding: 4px 6px; */
+}
+
+#group-right {
+	border: 2px solid @modules_border;
+	border-radius: 2px;
+
+	/* background-color: @modules_background; */
+
+	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
+
+	margin-top: 4px;
+	margin-bottom: 6px;
+
+	margin-right: 6px;
+
+	/* padding: 4px 6px; */
 }
 
 /*-----ARCH ICON-----*/
 
-.bar_2k #custom-archicon {
+#custom-archicon {
 	color: @archicon_idle;
 
-	font-size: 22px; /* Global font size + 4px */
-
-	padding: 0 8px;
+	padding: 0 10px 0 3px;
 	transition: color 0.3s;
 }
 
+.bar_2k #custom-archicon {
+	/* Global font size + 4px */
+	font-size: 22px;
+}
+
 .bar_1080p #custom-archicon {
-	color: @archicon_idle;
-
-	font-size: 19px; /* Global font size + 4px */
-
-	padding: 0 8px;
-	transition: color 0.3s;
+	/* Global font size + 4px */
+	font-size: 19px;
 }
 
 #custom-archicon:hover {
@@ -106,22 +140,29 @@
 /*-----WORKSPACES-----*/
 
 #workspaces {
-
 }
 
 #workspaces button {
 	color: @workspaces_button_idle;
 
+	font-size: 22px;
+
+	/* background-color: grey; */
+
+	/* margin: 0 2px; */
 	padding: 0 6px;
 	transition: color 0.3s;
 }
 
 #workspaces button.active {
 	color: @workspaces_button_hover;
+	/* background-color: #00CFFF; */
 }
 
 #workspaces button:hover {
 	color: @workspaces_button_hover;
+	
+	/* background-color: grey; */
 
 	transition: color 0.3s;
 
@@ -174,7 +215,20 @@
 #clock {
 	color: @clock_idle;
 
-	padding: 0 6px;
+	border: 2px solid @modules_border;
+	border-radius: 2px;
+
+	/* background-color: @modules_background; */
+	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
+
+	margin-top: 4px;
+	margin-bottom: 6px;
+
+	margin-right: 6px;
+
+	padding: 4px 6px;
+
+	/* padding: 0 6px; */
 	transition: color 0.3s;
 }
 
@@ -199,16 +253,16 @@
 	transition: color 0.3s;
 }
 
-/*-----PULSEAUDIO VOLUME-----*/
+/*-----WIREPLUMBER-----*/
 
-#pulseaudio.sound {
+#wireplumber {
 	color: @sound_idle;
 
 	padding: 0 6px;
 	transition: color 0.3s;
 }
 
-#pulseaudio.sound:hover {
+#wireplumber:hover {
 	color: @sound_hover;
 
 	transition: color 0.3s;
@@ -217,7 +271,6 @@
 /*-----GROUP END-----*/
 
 #group-end {
-	padding: 0 6px;
 }
 
 /*-----CUSTOM PIPE-----*/
@@ -229,46 +282,60 @@
 
 /*-----BLUETOOTH-----*/
 
-.bar_2k #bluetooth {
+#bluetooth {
 	color: @bluetooth_idle;
 
-	padding: 0 3px 0 2px;
-	font-size: 21px; /* Global font size + 3px */
+	background-color: #0B80E8;
+
+	border-radius: 2px;
+
+	padding: 0 10px;
+
 	transition: color 0.3s;
 }
 
-.bar_1080p #bluetooth {
-	color: @bluetooth_idle;
-
-	padding: 0 3px 0 2px;
-	font-size: 18px; /* Global font size + 3px */
-	transition: color 0.3s;
+#bluetooth.off {
+	background-color: grey;
 }
 
 #bluetooth:hover {
 	color: @bluetooth_hover;
-
 	transition: color 0.3s;
+}
+
+.bar_2k #bluetooth {
+	/* Global font size + 3px */
+	font-size: 21px;
+}
+
+.bar_1080p #bluetooth {
+	/* Global font size + 3px */
+	font-size: 18px;
 }
 
 /*-----NETWORK-----*/
 
 #network {
 	color: @network_idle;
+
+	border-radius: 2px;
+
+	background-color: #4DCC90;
 	
 	transition: color 0.3s;
 }
 
 #network.wifi {
-	padding: 0 10px 0 2px;
+	/* padding: 0 10px 0 2px; */
 }
 
 #network.ethernet {
-	padding: 0 2px 0 2px;
+	padding: 0 6px;
 }
 
 #network.disconnected {
-	padding: 0 6px 0 1px;
+	/* padding: 0 6px 0 1px; */
+	background-color: grey;
 }
 
 #network:hover {
@@ -282,7 +349,10 @@
 #custom-power {
 	color: @power_idle;
 
-	padding: 0 10px 0 6px;
+	border-radius: 2px;
+	background-color: #ED45B8;
+
+	padding: 0 14px 0 9px;
 	transition: color 0.3s;
 }
 

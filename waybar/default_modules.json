@@ -1,20 +1,18 @@
 {
-    "spacing": 12,
+    "spacing": 6,
     "margin": 0,
     "modules-left": [
-        "custom/archicon",
-        "hyprland/workspaces",
-        "custom/spotify",
-        "tray"
+        "group/group-left"
+        // "custom/archicon",
+        // "custom/spotify",
+        // "tray"
     ],
     "modules-center": [
-        "clock"
+        "clock",
+        "hyprland/workspaces"
     ],
     "modules-right": [
-        "custom/wl-gammarelay-brightness",
-        "pulseaudio#sound",
-        "group/group-end",
-        "custom/power"
+        "group/group-right"
     ],
 
     "custom/archicon": {
@@ -35,6 +33,29 @@
         "spacing": 6,
         "tooltip": false
     },
+
+    "group/group-left": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/archicon",
+            "custom/pipe",
+            "custom/spotify",
+            "custom/pipe",
+            "tray"
+        ],
+        "spacing": 15
+    },
+
+    "group/group-right": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/wl-gammarelay-brightness",
+            "wireplumber",
+            "group/group-end"
+        ],
+        "spacing": 15
+    },
+
 
 
     "clock": {
@@ -57,18 +78,18 @@
         }
     },
     "custom/wl-gammarelay-brightness": {
-        "format": "󰃠 {}%",
+        "format": "󰃠 ▮▮▮▯▯▯▯▯▯▯",
         "tooltip": false,
         "exec": "wl-gammarelay-rs watch {bp}",
         "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
         "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
     },
-    "pulseaudio#sound": {
-	    "format": "{icon} {volume}%",
-        "format-muted": " {volume}%",
-        "format-icons": {
-            "default": ["", "", " "]
-        },
+    "wireplumber": {
+	    "format": " ▮▮▮▯▯▯▯▯▯▯",
+        // "format-muted": " {volume}%",
+        // "format-icons": {
+        //     "default": ["", "", " "]
+        // },
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-click-right": "pavucontrol",
         "tooltip": false
@@ -78,7 +99,9 @@
         "modules": [
             "bluetooth",
             "custom/pipe",
-            "network"
+            "network",
+            "custom/pipe",
+            "custom/power"
         ],
         "spacing": 15
     },
@@ -87,14 +110,14 @@
         "format-off": "󰂲",
         "format-on": "󰂯",
         "format-connected": "󰂱",
-        "on-click-right": "bluetoothctl disconnect",
-        "on-click": "kitty -e bluetoothctl",
+        "on-click-right": "kitty -e bluetoothctl",
+        "on-click": "bluetoothctl show | grep -q \"Powered: yes\" && bluetoothctl power off || bluetoothctl power on",
         "tooltip-format-connected": "{device_alias}\t{device_address}"
     },
     "network": {
     	"interval": 60,
         "format-wifi": "",
-        "format-ethernet": "",
+        "format-ethernet": "",
         "format-disconnected": "",
         "tooltip-format-ethernet": "{ifname}",
         "tooltip-format-wifi": "{essid}"
