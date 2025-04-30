@@ -45,13 +45,6 @@ class PlayerManager:
                 continue
             if self.selected_player is not None and self.selected_player != player.name:
                 logger.debug(f"{player.name} is not the filtered player, skipping it")
-
-                output = {"text": f" 404 - Not Found",
-                  "class": "custom-spotify",
-                  "alt": "spotify"}
-
-                sys.stdout.write(json.dumps(output) + "\n")
-                sys.stdout.flush()
                 continue
             self.init_player(player)
 
@@ -114,6 +107,12 @@ class PlayerManager:
             self.on_metadata_changed(current_player, current_player.props.metadata)
         else:    
             self.clear_output()
+            output = {"text": f" 404 - Not Found",
+              "class": "custom-spotify",
+              "alt": "spotify"}
+
+            sys.stdout.write(json.dumps(output) + "\n")
+            sys.stdout.flush()
 
     def on_metadata_changed(self, player, metadata, _=None):
         logger.debug(f"Metadata changed for player {player.props.player_name}")
@@ -175,6 +174,13 @@ def parse_arguments():
 
 def main():
     arguments = parse_arguments()
+
+    output = {"text": f" 404 - Not Found",
+                  "class": "custom-spotify",
+                  "alt": "spotify"}
+
+    sys.stdout.write(json.dumps(output) + "\n")
+    sys.stdout.flush()
 
     # Initialize logging
     if arguments.enable_logging:

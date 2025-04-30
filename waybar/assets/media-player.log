@@ -1,0 +1,35 @@
+2025-04-30 13:46:21,268 __main__ INFO:197 Creating player manager
+2025-04-30 13:46:21,268 __main__ INFO:199 Filtering for player: spotify
+2025-04-30 13:46:21,270 __main__ INFO:59 Starting main loop
+2025-04-30 13:46:26,523 __main__ INFO:145 Player has appeared: spotify
+2025-04-30 13:46:26,523 __main__ INFO:63 Initialize new player: spotify
+2025-04-30 13:46:28,498 __main__ INFO:157 Player spotify has vanished
+2025-04-30 13:47:03,693 __main__ INFO:18 Received signal to stop, exiting
+2025-04-30 13:47:04,110 __main__ INFO:203 Creating player manager
+2025-04-30 13:47:04,111 __main__ INFO:205 Filtering for player: spotify
+2025-04-30 13:47:04,113 __main__ INFO:65 Starting main loop
+2025-04-30 13:47:05,963 __main__ INFO:151 Player has appeared: spotify
+2025-04-30 13:47:05,963 __main__ INFO:69 Initialize new player: spotify
+2025-04-30 13:47:09,251 __main__ INFO:163 Player spotify has vanished
+2025-04-30 13:47:47,246 __main__ INFO:18 Received signal to stop, exiting
+2025-04-30 13:47:47,825 __main__ INFO:198 Creating player manager
+2025-04-30 13:47:47,825 __main__ INFO:200 Filtering for player: spotify
+2025-04-30 13:47:47,827 __main__ INFO:60 Starting main loop
+2025-04-30 13:47:50,269 __main__ INFO:146 Player has appeared: spotify
+2025-04-30 13:47:50,269 __main__ INFO:64 Initialize new player: spotify
+2025-04-30 13:47:51,234 __main__ INFO:158 Player spotify has vanished
+2025-04-30 13:48:34,532 __main__ INFO:18 Received signal to stop, exiting
+2025-04-30 13:48:35,051 __main__ INFO:199 Creating player manager
+2025-04-30 13:48:35,051 __main__ INFO:201 Filtering for player: spotify
+2025-04-30 13:48:35,053 __main__ INFO:60 Starting main loop
+2025-04-30 13:48:38,166 __main__ INFO:147 Player has appeared: spotify
+2025-04-30 13:48:38,166 __main__ INFO:64 Initialize new player: spotify
+2025-04-30 13:48:42,065 __main__ INFO:159 Player spotify has vanished
+2025-04-30 13:49:13,814 __main__ INFO:18 Received signal to stop, exiting
+2025-04-30 13:49:15,490 __main__ INFO:198 Creating player manager
+2025-04-30 13:49:15,490 __main__ INFO:200 Filtering for player: spotify
+2025-04-30 13:49:15,493 __main__ INFO:59 Starting main loop
+2025-04-30 13:49:17,826 __main__ INFO:146 Player has appeared: spotify
+2025-04-30 13:49:17,827 __main__ INFO:63 Initialize new player: spotify
+2025-04-30 13:49:21,521 __main__ INFO:158 Player spotify has vanished
+2025-04-30 13:49:32,832 __main__ INFO:18 Received signal to stop, exiting
