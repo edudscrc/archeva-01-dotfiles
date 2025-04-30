@@ -14,7 +14,6 @@
     "group/group-left": {
         "orientation": "horizontal",
         "modules": [
-            // "custom/archicon",
             "hyprland/workspaces",
             "custom/spotify",
             "tray"
@@ -36,11 +35,6 @@
         ]
     },
 
-    "custom/archicon": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "rofi -show drun"
-    },
     "custom/spotify": {
     	"format": "{}",
    	    "exec": "/usr/bin/python3 ~/.config/waybar/assets/mediaplayer.py --player spotify",
