@@ -10,34 +10,12 @@
 [{
   "name": "bar_2k",
   "output": "DP-3",
-  "hyprland/workspaces": {
-      "format": "{icon}",
-      "format-icons": {
-        "3": "🯳",
-        "4": "🯴"
-      },
-      "persistent-workspaces": {
-          "3": [],
-          "4": []
-      }
-  },
   "include": [
   "~/.config/waybar/default_modules.json"
 ]
 }, {
   "name": "bar_1080p",
   "output": "HDMI-A-1",
-  "hyprland/workspaces": {
-      "format": "{icon}",
-      "format-icons": {
-        "1": "🯱",
-        "2": "🯲"
-      },
-      "persistent-workspaces": {
-          "1": [],
-          "2": []
-      }
-  },
   "include": [
   "~/.config/waybar/default_modules.json"
 ]

@@ -1,19 +1,40 @@
 {
-    "spacing": 6,
+    "spacing": 0,
     "margin": 0,
     "modules-left": [
         "group/group-left"
-        // "custom/archicon",
-        // "custom/spotify",
-        // "tray"
     ],
     "modules-center": [
-        "clock",
-        "hyprland/workspaces"
+        "group/group-center"
     ],
     "modules-right": [
         "group/group-right"
     ],
+
+    "group/group-left": {
+        "orientation": "horizontal",
+        "modules": [
+            // "custom/archicon",
+            "hyprland/workspaces",
+            "custom/spotify",
+            "tray"
+        ]
+    },
+    "group/group-center": {
+        "orientation": "horizontal",
+        "modules": [
+            "clock"
+        ]
+    },
+    "group/group-right": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/wl-gammarelay-brightness",
+            "wireplumber",
+            "group/group-end",
+            "custom/power"
+        ]
+    },
 
     "custom/archicon": {
         "format": "",
@@ -34,30 +55,6 @@
         "tooltip": false
     },
 
-    "group/group-left": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/archicon",
-            "custom/pipe",
-            "custom/spotify",
-            "custom/pipe",
-            "tray"
-        ],
-        "spacing": 15
-    },
-
-    "group/group-right": {
-        "orientation": "horizontal",
-        "modules": [
-            "custom/wl-gammarelay-brightness",
-            "wireplumber",
-            "group/group-end"
-        ],
-        "spacing": 15
-    },
-
-
-
     "clock": {
         "format": "{:%a %d %b %H:%M}",
         "tooltip-format": "<tt>{calendar}</tt>",
@@ -77,6 +74,7 @@
             "on-scroll-down": "shift_down"
         }
     },
+
     "custom/wl-gammarelay-brightness": {
         "format": "󰃠 ▮▮▮▯▯▯▯▯▯▯",
         "tooltip": false,
@@ -86,10 +84,6 @@
     },
     "wireplumber": {
 	    "format": " ▮▮▮▯▯▯▯▯▯▯",
-        // "format-muted": " {volume}%",
-        // "format-icons": {
-        //     "default": ["", "", " "]
-        // },
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-click-right": "pavucontrol",
         "tooltip": false
@@ -100,11 +94,10 @@
             "bluetooth",
             "custom/pipe",
             "network",
-            "custom/pipe",
-            "custom/power"
-        ],
-        "spacing": 15
+            "custom/pipe"
+        ]
     },
+    
     "bluetooth": {
         "format-disabled": "",
         "format-off": "󰂲",

@@ -40,7 +40,7 @@
 @define-color network_idle #000000;
 @define-color network_hover #CC81F1;
 
-@define-color power_idle #000000;
+@define-color power_idle #ffffff;
 @define-color power_hover #CC81F1;
 
 @define-color tooltip_background #1A1525;
@@ -67,49 +67,24 @@
 	background-color: @modules_background;
 	margin: 0;
     padding: 0;
+	border-bottom: 2px solid @modules_border;
 }
 
-.modules-center {
-}
-
-.modules-left {
-	margin-left: 6px;
-}
-
+.modules-left,
+.modules-center,
 .modules-right {
-	margin-right: 6px;
+	padding-top: 2px;
+	padding-bottom: 4px;
 }
 
-#group-left {
-	border: 2px solid @modules_border;
-	border-radius: 2px;
-
-	/* background-color: @modules_background; */
-
-	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
-
-	margin-top: 4px;
-	margin-bottom: 6px;
-
-	margin-right: 6px;
-
-	/* padding: 4px 6px; */
-}
-
+#group-left,
+#group-center,
 #group-right {
 	border: 2px solid @modules_border;
 	border-radius: 2px;
-
-	/* background-color: @modules_background; */
-
 	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
 
-	margin-top: 4px;
-	margin-bottom: 6px;
-
-	margin-right: 6px;
-
-	/* padding: 4px 6px; */
+	margin: 0px 6px;
 }
 
 /*-----ARCH ICON-----*/
@@ -145,24 +120,16 @@
 #workspaces button {
 	color: @workspaces_button_idle;
 
-	font-size: 22px;
-
-	/* background-color: grey; */
-
-	/* margin: 0 2px; */
-	padding: 0 6px;
+	padding: 0 3px;
 	transition: color 0.3s;
 }
 
 #workspaces button.active {
 	color: @workspaces_button_hover;
-	/* background-color: #00CFFF; */
 }
 
 #workspaces button:hover {
 	color: @workspaces_button_hover;
-	
-	/* background-color: grey; */
 
 	transition: color 0.3s;
 
@@ -215,20 +182,8 @@
 #clock {
 	color: @clock_idle;
 
-	border: 2px solid @modules_border;
-	border-radius: 2px;
+	padding: 0px 6px;
 
-	/* background-color: @modules_background; */
-	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
-
-	margin-top: 4px;
-	margin-bottom: 6px;
-
-	margin-right: 6px;
-
-	padding: 4px 6px;
-
-	/* padding: 0 6px; */
 	transition: color 0.3s;
 }
 
@@ -271,6 +226,8 @@
 /*-----GROUP END-----*/
 
 #group-end {
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 /*-----CUSTOM PIPE-----*/
@@ -319,7 +276,6 @@
 	color: @network_idle;
 
 	border-radius: 2px;
-
 	background-color: #4DCC90;
 	
 	transition: color 0.3s;
@@ -349,10 +305,11 @@
 #custom-power {
 	color: @power_idle;
 
-	border-radius: 2px;
-	background-color: #ED45B8;
+	margin-left: 4px;
+	margin-right: 12px;
 
-	padding: 0 14px 0 9px;
+	/* padding: 0 6px 0 6px; */
+	
 	transition: color 0.3s;
 }
 

@@ -45,6 +45,13 @@ class PlayerManager:
                 continue
             if self.selected_player is not None and self.selected_player != player.name:
                 logger.debug(f"{player.name} is not the filtered player, skipping it")
+
+                output = {"text": f" 404 - Not Found",
+                  "class": "custom-spotify",
+                  "alt": "spotify"}
+
+                sys.stdout.write(json.dumps(output) + "\n")
+                sys.stdout.flush()
                 continue
             self.init_player(player)
 
@@ -115,7 +122,6 @@ class PlayerManager:
         title = player.get_title()
         title = title.replace("&", "&amp;")
 
-        track_info = ""
         if player_name == "spotify" and "mpris:trackid" in metadata.keys() and ":ad:" in player.props.metadata["mpris:trackid"]:
             track_info = "Advertisement"
         elif artist is not None and title is not None:
