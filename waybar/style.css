@@ -7,44 +7,53 @@
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
-@define-color modules_background #1A1525;
-@define-color modules_border #2A233D;
+@define-color modules_background #0e0e13;
+@define-color modules_border #1a1f2b;
 
-@define-color archicon_idle #0B80E8;
-@define-color archicon_hover #CC81F1;
+@define-color workspaces_button_hover #0e0e13;
+@define-color workspaces_button_active #0e0e13;
+@define-color workspaces_button_idle #0e0e13;
+@define-color workspaces_button_background_hover #a5c6d4;
+@define-color workspaces_button_background_active #a5c6d4;
+@define-color workspaces_button_background_idle #263B4C;
 
-@define-color workspaces_button_hover #000000;
-@define-color workspaces_button_idle #ffffff;
+@define-color spotify_idle #3a5e83;
+@define-color spotify_hover #a5c6d4;
 
-@define-color spotify_idle #A55EF0;
-@define-color spotify_hover #CC81F1;
+@define-color tray_menu #0e0e13;
+@define-color tray_menu_border #1a1f2b;
+@define-color tray_menu_item #3a5e83;
+@define-color tray_menu_item_hover #3a5e83;
+@define-color tray_menu_item_hover_background #1a1f2b;
 
-@define-color tray_menu #1A1525;
-@define-color tray_menu_border #2A233D;
-@define-color tray_menu_item #CC81F1;
-@define-color tray_menu_item_hover #CC81F1;
-@define-color tray_menu_item_hover_background #2A233D;
+@define-color clock_idle #3a5e83;
+@define-color clock_hover #a5c6d4;
 
-@define-color clock_idle #0B80E8;
-@define-color clock_hover #CC81F1;
+@define-color brightness_idle #3a5e83;
+@define-color brightness_hover #a5c6d4;
 
-@define-color brightness_idle #0B80E8;
-@define-color brightness_hover #CC81F1;
+@define-color sound_idle #3a5e83;
+@define-color sound_hover #a5c6d4;
 
-@define-color sound_idle #0B80E8;
-@define-color sound_hover #CC81F1;
+@define-color bluetooth_idle #0e0e13;
+@define-color bluetooth_hover #0e0e13;
+@define-color bluetooth_background_on #a5c6d4;
+@define-color bluetooth_background_off #263B4C;
+@define-color bluetooth_background_on_hover #c0d7e1;
+@define-color bluetooth_background_off_hover #334f66;
 
-@define-color bluetooth_idle #000000;
-@define-color bluetooth_hover #CC81F1;
+@define-color network_idle #0e0e13;
+@define-color network_hover #0e0e13;
+@define-color network_background_connected #a5c6d4;
+@define-color network_background_off #263B4C;
+@define-color network_background_connected_hover #c0d7e1;
+@define-color network_background_off_hover #334f66;
 
-@define-color network_idle #000000;
-@define-color network_hover #CC81F1;
+@define-color power_idle #3a5e83;
+@define-color power_hover #a5c6d4;
 
-@define-color power_idle #ffffff;
-@define-color power_hover #CC81F1;
-
-@define-color tooltip_background #1A1525;
-@define-color tooltip_text #CC81F1;
+@define-color tooltip_background #0e0e13;
+@define-color tooltip_text #f4faff;
 
 /*----------------*/
 /*-----GLOBAL-----*/
@@ -83,6 +92,7 @@
 	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
 
 	background-color: @modules_background;
+	/* background-color: rgba(26, 21, 37, 0.93); */
 
 	margin: 0px 6px;
 }
@@ -98,7 +108,7 @@
 
 #workspaces button {
 	color: @workspaces_button_idle;
-	background-color: #2A233D;
+	background-color: @workspaces_button_background_idle;
 
 	border-radius: 2px;
 	margin: 0 2px;
@@ -109,7 +119,7 @@
 
 #workspaces button.active {
 	color: @workspaces_button_hover;
-	background-color: #CC81F1;
+	background-color: @workspaces_button_background_active;
 }
 
 #workspaces button:hover {
@@ -118,7 +128,7 @@
 	transition: color 0.3s;
 	
 	background: none;
-	background-color: #CC81F1;
+	background-color: @workspaces_button_background_hover;
 	box-shadow: none;
 	text-shadow: none;
 	transition: none;
@@ -233,7 +243,7 @@
 #bluetooth {
 	color: @bluetooth_idle;
 
-	background-color: #0B80E8;
+	background-color: @bluetooth_background_on;
 
 	border-radius: 2px;
 
@@ -243,11 +253,16 @@
 }
 
 #bluetooth.off {
-	background-color: grey;
+	background-color: @bluetooth_background_off;
+}
+
+#bluetooth.off:hover {
+	background-color: @bluetooth_background_off_hover;
 }
 
 #bluetooth:hover {
 	color: @bluetooth_hover;
+	background-color: @bluetooth_background_on_hover;
 	transition: color 0.3s;
 }
 
@@ -267,7 +282,7 @@
 	color: @network_idle;
 
 	border-radius: 2px;
-	background-color: #4DCC90;
+	background-color: @network_background_connected;
 	
 	transition: color 0.3s;
 }
@@ -282,11 +297,16 @@
 
 #network.disconnected {
 	/* padding: 0 6px 0 1px; */
-	background-color: grey;
+	background-color: @network_background_off;
+}
+
+#network.disconnected:hover {
+	background-color: @network_background_off_hover;
 }
 
 #network:hover {
 	color: @network_hover;
+	background-color: @network_background_connected_hover;
 
 	transition: color 0.3s;
 }
