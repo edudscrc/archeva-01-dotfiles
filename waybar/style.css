@@ -211,14 +211,14 @@
 /*-----WIREPLUMBER-----*/
 /*---------------------*/
 
-#wireplumber {
+#custom-wireplumber {
 	color: @sound_idle;
 
 	padding: 0 6px;
 	transition: color 0.3s;
 }
 
-#wireplumber:hover {
+#custom-wireplumber:hover {
 	color: @sound_hover;
 
 	transition: color 0.3s;

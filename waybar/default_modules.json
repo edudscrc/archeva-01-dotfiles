@@ -22,14 +22,15 @@
     "group/group-center": {
         "orientation": "horizontal",
         "modules": [
-            "clock"
+            "clock",
+            "custom/wl-gammarelay-brightness-aux"
         ]
     },
     "group/group-right": {
         "orientation": "horizontal",
         "modules": [
             "custom/wl-gammarelay-brightness",
-            "wireplumber",
+            "custom/wireplumber",
             "group/group-end",
             "custom/power"
         ]
@@ -71,24 +72,29 @@
 
     "custom/wl-gammarelay-brightness": {
         "format": "{}",
-        "tooltip": false,
+        "return-type": "json",
+        "tooltip": true,
         "exec": "~/.config/waybar/assets/brightness_bar.sh",
         "interval": 2,
-        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
-        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
+        "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.05",
+        "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.05"
     },
-    // "custom/wl-gammarelay-brightness": {
-    //     "format": "󰃠 ▮▮▮▯▯▯▯▯▯▯",
-    //     "tooltip": false,
-    //     "exec": "wl-gammarelay-rs watch {bp}",
-    //     "on-scroll-up": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d +0.02",
-    //     "on-scroll-down": "busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateBrightness d -0.02"
-    // },
-    "wireplumber": {
-	    "format": " ▮▮▮▯▯▯▯▯▯▯",
+    "custom/wl-gammarelay-brightness-aux": {
+        "format": "",
+        "tooltip": false,
+        "exec": "wl-gammarelay-rs watch {bp}"
+    },
+    "custom/wireplumber": {
+        "format": "{}", 
+        "return-type": "json",
+        "exec": "~/.config/waybar/assets/volume_bar.sh",
+        "exec-if": "which wpctl",
+        "interval": 1,
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
         "on-click-right": "pavucontrol",
-        "tooltip": false
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+        "tooltip": true
     },
     "group/group-end": {
         "orientation": "horizontal",
