@@ -115,17 +115,22 @@
 	padding: 0 6px;
 
 	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 #workspaces button.active {
 	color: @workspaces_button_hover;
 	background-color: @workspaces_button_background_active;
+
+	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 #workspaces button:hover {
 	color: @workspaces_button_hover;
 	
 	transition: color 0.3s;
+	transition: background-color 0.3s;
 	
 	background: none;
 	background-color: @workspaces_button_background_hover;
@@ -250,20 +255,27 @@
 	padding: 0 10px;
 
 	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 #bluetooth.off {
 	background-color: @bluetooth_background_off;
+
+	transition: background-color 0.3s;
 }
 
 #bluetooth.off:hover {
 	background-color: @bluetooth_background_off_hover;
+	
+	transition: background-color 0.3s;
 }
 
 #bluetooth:hover {
 	color: @bluetooth_hover;
 	background-color: @bluetooth_background_on_hover;
+
 	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 .bar_2k #bluetooth {
@@ -285,6 +297,7 @@
 	background-color: @network_background_connected;
 	
 	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 #network.wifi {
@@ -298,10 +311,14 @@
 #network.disconnected {
 	/* padding: 0 6px 0 1px; */
 	background-color: @network_background_off;
+
+	transition: background-color 0.3s;
 }
 
 #network.disconnected:hover {
 	background-color: @network_background_off_hover;
+	
+	transition: background-color 0.3s;
 }
 
 #network:hover {
@@ -309,6 +326,7 @@
 	background-color: @network_background_connected_hover;
 
 	transition: color 0.3s;
+	transition: background-color 0.3s;
 }
 
 /*-----CUSTOM POWER-----*/
