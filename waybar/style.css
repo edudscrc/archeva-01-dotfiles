@@ -13,8 +13,8 @@
 @define-color archicon_idle #0B80E8;
 @define-color archicon_hover #CC81F1;
 
-@define-color workspaces_button_hover #0B80E8;
-@define-color workspaces_button_idle #CC81F1;
+@define-color workspaces_button_hover #000000;
+@define-color workspaces_button_idle #ffffff;
 
 @define-color spotify_idle #A55EF0;
 @define-color spotify_hover #CC81F1;
@@ -46,7 +46,9 @@
 @define-color tooltip_background #1A1525;
 @define-color tooltip_text #CC81F1;
 
+/*----------------*/
 /*-----GLOBAL-----*/
+/*----------------*/
 
 * {
 	font-family: "JetBrains Mono", "JetBrainsMono Nerd Font";
@@ -64,15 +66,11 @@
 	background-color: transparent;
 	margin: 0;
     padding: 0;
-	/* border-bottom: 2px solid @modules_border; */
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
-	/* padding-top: 2px; */
-	/* padding-bottom: 8px; */
-
 	margin-top: 4px;
 	margin-bottom: 8px;
 }
@@ -89,28 +87,38 @@
 	margin: 0px 6px;
 }
 
+/*--------------------*/
 /*-----WORKSPACES-----*/
+/*--------------------*/
 
 #workspaces {
+	margin-top: 4px;
+	margin-bottom: 4px;
 }
 
 #workspaces button {
 	color: @workspaces_button_idle;
+	background-color: #2A233D;
 
-	padding: 0 3px;
+	border-radius: 2px;
+	margin: 0 2px;
+	padding: 0 6px;
+
 	transition: color 0.3s;
 }
 
 #workspaces button.active {
 	color: @workspaces_button_hover;
+	background-color: #CC81F1;
 }
 
 #workspaces button:hover {
 	color: @workspaces_button_hover;
-
+	
 	transition: color 0.3s;
-
+	
 	background: none;
+	background-color: #CC81F1;
 	box-shadow: none;
 	text-shadow: none;
 	transition: none;
@@ -122,7 +130,7 @@
 #custom-spotify {
 	color: @spotify_idle;
 
-	padding: 0 6px;
+	padding: 0 3px 0 9px;
 	transition: color 0.3s;
 }
 
@@ -154,7 +162,9 @@
 	background-color: @tray_menu_item_hover_background;
 }
 
+/*---------------*/
 /*-----CLOCK-----*/
+/*---------------*/
 
 #clock {
 	color: @clock_idle;
@@ -170,7 +180,9 @@
 	transition: color 0.3s;
 }
 
+/*-----------------------------------------*/
 /*-----CUSTOM-WL-GAMMARELAY-BRIGHTNESS-----*/
+/*-----------------------------------------*/
 
 #custom-wl-gammarelay-brightness {
 	color: @brightness_idle;
@@ -185,7 +197,9 @@
 	transition: color 0.3s;
 }
 
+/*---------------------*/
 /*-----WIREPLUMBER-----*/
+/*---------------------*/
 
 #wireplumber {
 	color: @sound_idle;
@@ -282,8 +296,7 @@
 #custom-power {
 	color: @power_idle;
 
-	margin-left: 4px;
-	margin-right: 12px;
+	padding: 0 15px 0 8px;
 
 	/* padding: 0 6px 0 6px; */
 	
