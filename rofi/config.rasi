@@ -1,7 +1,7 @@
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * *
 * Author: Eduardo de Sá Coêlho Ribeiro Costa   	*
-* Github: edudscrc							   	*
+* Github: https://github.com/edudscrc           *
 *											   	*
 * Rofi Version: 1.7.8-dirty						*
 * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -18,33 +18,33 @@ configuration {
 /*-----Global-----*/
 
 * {
-	color0: #0e0e13;
+	color0: #12161f;
 	color1: #b1535e;
 	color2: #d29d72;
-	color3: #3a5e83;
+	color3: #6b90ad;
 	color4: #a5c6d4;
-	color5: #3b4c63;
+	color5: #4e6a89;
 	color6: #8fa99c;
-	color7: #f4faff;
+	color7: #cfd8e3;
 	color8: #1a1f2b;
-	color9: #12161f;
+	color9: #252b37;
 
-	fg-highlight: @color6;
+	fg-highlight: @color4;
 
-	bg-entry: @color9;
-	fg-entry: @color6;
-	fg-placeholder: #8fa99c50;
+	bg-entry: @color0;
+	fg-entry: @color4;
+	fg-placeholder: #a5c6d450;
 
-	bg-listview: @color9;
-	fg-element: @color3;
+	bg-listview: @color0;
+	fg-element: @color5;
 
-	bg-element-selected: @color5;
-	fg-element-selected: @color4;
-	border-color-element-selected: @color4;
+	bg-element-selected: @color8;
+	fg-element-selected: @color3;
+	border-color-element-selected: @color3;
 
 	bg-inputbar: @color8;
 
-	border-color: @color5;
+	border-color: @color3;
 
 	// border-radius
     br: 2px;

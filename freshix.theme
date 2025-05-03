@@ -1,0 +1,83 @@
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#1a1f2b"
+
+# Main text color
+theme[main_fg]="#6b90ad"
+
+# Title color for boxes
+theme[title]="#d29d72"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#cfd8e3"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#252b37"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#d29d72"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#252b37"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#d29d72"
+
+# Background color of the percentage meters
+theme[meter_bg]="#2A233D"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#d29d72"
+
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="#3b4c63"
+theme[mem_box]="#3b4c63"
+theme[net_box]="#3b4c63"
+theme[proc_box]="#3b4c63"
+
+# Box divider line and small boxes line color
+theme[div_line]="#3b4c63"
+
+# Process box color gradient for threads, mem and cpu usage (Sapphire -> Mauve)
+theme[process_start]="#a5c6d4"
+theme[process_mid]="#a5c6d4"
+theme[process_end]="#a5c6d4"
+
+# Temperature graph color (Green -> Yellow -> Red)
+theme[temp_start]="#8fa99c"
+theme[temp_mid]="#d29d72"
+theme[temp_end]="#b1535e"
+
+# CPU graph colors (Teal -> Lavender)
+theme[cpu_start]="#8fa99c"
+theme[cpu_mid]="#d29d72"
+theme[cpu_end]="#b1535e"
+
+# Mem/Disk free meter (Mauve -> Lavender -> Blue)
+theme[free_start]="#8fa99c"
+theme[free_mid]="#d29d72"
+theme[free_end]="#b1535e"
+
+# Mem/Disk cached meter (Sapphire -> Lavender)
+theme[cached_start]="#8fa99c"
+theme[cached_mid]="#d29d72"
+theme[cached_end]="#b1535e"
+
+# Mem/Disk available meter (Peach -> Red)
+theme[available_start]="#8fa99c"
+theme[available_mid]="#d29d72"
+theme[available_end]="#b1535e"
+
+# Mem/Disk used meter (Green -> Sky)
+theme[used_start]="#8fa99c"
+theme[used_mid]="#d29d72"
+theme[used_end]="#b1535e"
+
+# Download graph colors (Peach -> Red)
+theme[download_start]="#8fa99c"
+theme[download_mid]="#d29d72"
+theme[download_end]="#b1535e"
+
+# Upload graph colors (Green -> Sky)
+theme[upload_start]="#8fa99c"
+theme[upload_mid]="#d29d72"
+theme[upload_end]="#b1535e"
