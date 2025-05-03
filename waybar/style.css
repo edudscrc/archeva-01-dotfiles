@@ -1,22 +1,22 @@
 /*
 * * * * * * * * * * * * * * * * * * * * * * * * *
 * Author: Eduardo de Sá Coêlho Ribeiro Costa   	*
-* Github: edudscrc							   	*
-*											   	*
-* Waybar v0.12.0						   	    *
+* Github: edudscrc							   	            *
+*											   	                      *
+* Waybar v0.12.0						   	                *
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
 @define-color modules_background #12161f;
 @define-color modules_border #1a1f2b;
 
-@define-color workspaces_button_idle #0e0e13;
-@define-color workspaces_button_active #0e0e13;
+@define-color workspaces_button_idle #12161f;
+@define-color workspaces_button_active #12161f;
 @define-color workspaces_button_background_idle #263B4C;
 @define-color workspaces_button_background_active #a5c6d4;
 
-@define-color spotify_idle #3a5e83;
-@define-color spotify_hover #a5c6d4;
+@define-color spotify_idle #8fa99c;
+@define-color spotify_hover #b1c3ba;
 
 @define-color tray_menu #12161f;
 @define-color tray_menu_border #1a1f2b;
@@ -27,8 +27,8 @@
 @define-color clock_idle #3a5e83;
 @define-color clock_hover #a5c6d4;
 
-@define-color weather_idle #3a5e83;
-@define-color weather_hover #a5c6d4;
+@define-color weather_idle #a5c6d4;
+@define-color weather_hover #3a5e83;
 
 @define-color brightness_idle #3a5e83;
 @define-color brightness_hover #a5c6d4;
@@ -36,24 +36,24 @@
 @define-color sound_idle #3a5e83;
 @define-color sound_hover #a5c6d4;
 
-@define-color bluetooth_idle #0e0e13;
-@define-color bluetooth_hover #0e0e13;
+@define-color bluetooth_idle #12161f;
+@define-color bluetooth_hover #12161f;
 @define-color bluetooth_background_on #a5c6d4;
+@define-color bluetooth_background_on_hover #cfd8e3;
 @define-color bluetooth_background_off #263B4C;
-@define-color bluetooth_background_on_hover #c0d7e1;
 @define-color bluetooth_background_off_hover #334f66;
 
-@define-color network_idle #0e0e13;
-@define-color network_hover #0e0e13;
+@define-color network_idle #12161f;
+@define-color network_hover #12161f;
 @define-color network_background_connected #a5c6d4;
+@define-color network_background_connected_hover #cfd8e3;
 @define-color network_background_off #263B4C;
-@define-color network_background_connected_hover #c0d7e1;
 @define-color network_background_off_hover #334f66;
 
-@define-color power_idle #0e0e13;
-@define-color power_hover #0e0e13;
-@define-color power_background_idle #a5c6d4;
-@define-color power_background_hover #c0d7e1;
+@define-color power_idle #12161f;
+@define-color power_hover #12161f;
+@define-color power_background_idle #b1535e;
+@define-color power_background_hover #c8878e;
 
 @define-color tooltip_background #12161f;
 @define-color tooltip_text #f4faff;
@@ -251,7 +251,7 @@
 #custom-pipe,
 #network,
 #custom-power {
-  margin: 6px 0;
+  margin: 8px 0;
   border-radius: 2px;
 }
 
@@ -273,7 +273,7 @@
 
   padding: 0 6px;
 
-  font-size: 19px;
+  /* font-size: 18px; */
 
   transition: all 0.3s ease;
 }
