@@ -11,4 +11,4 @@ BAR=""
 for ((i = 0; i < FILLED; i++)); do BAR+="▮"; done
 for ((i = 0; i < EMPTY; i++)); do BAR+="▯"; done
 
-echo "{\"text\": \"󰃠 $BAR\", \"tooltip\": \"Brightness: ${PERCENT}%\", \"class\": \"custom-wl-gammarelay-brightness\", \"percentage\": $PERCENT}"
+echo "{\"text\": \"󰃠 $BAR\", \"tooltip\": \"Brightness: ${PERCENT}%\", \"class\": \"custom-wl-gammarelay-brightness\"}"
