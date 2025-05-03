@@ -7,7 +7,7 @@
 * * * * * * * * * * * * * * * * * * * * * * * * *
 */
 
-@define-color modules_background #0e0e13;
+@define-color modules_background #12161f;
 @define-color modules_border #1a1f2b;
 
 @define-color workspaces_button_hover #0e0e13;
@@ -60,41 +60,41 @@
 /*----------------*/
 
 * {
-	font-family: "JetBrains Mono", "JetBrainsMono Nerd Font";
-    font-weight: 600;
-	margin: 0;
-    padding: 0;
+  font-family: "JetBrains Mono", "JetBrainsMono Nerd Font";
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
 .bar_2k,
 .bar_1080p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #waybar {
-	background-color: transparent;
-	margin: 0;
-    padding: 0;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
-	margin-top: 4px;
-	margin-bottom: 8px;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 #group-left,
 #group-center,
 #group-right {
-	border: 2px solid @modules_border;
-	border-radius: 2px;
-	box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1.0);
+  border: 2px solid @modules_border;
+  border-radius: 2px;
+  box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 1);
 
-	background-color: @modules_background;
-	/* background-color: rgba(26, 21, 37, 0.93); */
+  background-color: @modules_background;
+  /* background-color: rgba(26, 21, 37, 0.93); */
 
-	margin: 0px 6px;
+  margin: 0px 6px;
 }
 
 /*--------------------*/
@@ -102,79 +102,79 @@
 /*--------------------*/
 
 #workspaces {
-	margin-top: 4px;
-	margin-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 #workspaces button {
-	color: @workspaces_button_idle;
-	background-color: @workspaces_button_background_idle;
+  color: @workspaces_button_idle;
+  background-color: @workspaces_button_background_idle;
 
-	border-radius: 2px;
-	margin: 0 2px;
-	padding: 0 6px;
+  border-radius: 2px;
+  margin: 0 2px;
+  padding: 0 6px;
 
-	transition: color 0.3s;
-	transition: background-color 0.3s;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 #workspaces button.active {
-	color: @workspaces_button_hover;
-	background-color: @workspaces_button_background_active;
+  color: @workspaces_button_hover;
+  background-color: @workspaces_button_background_active;
 
-	transition: color 0.3s;
-	transition: background-color 0.3s;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 #workspaces button:hover {
-	color: @workspaces_button_hover;
-	
-	transition: color 0.3s;
-	transition: background-color 0.3s;
-	
-	background: none;
-	background-color: @workspaces_button_background_hover;
-	box-shadow: none;
-	text-shadow: none;
-	transition: none;
-	border-color: transparent;
+  color: @workspaces_button_hover;
+
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+
+  background: none;
+  background-color: @workspaces_button_background_hover;
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
+  border-color: transparent;
 }
 
 /*-----CUSTOM SPOTIFY-----*/
 
 #custom-spotify {
-	color: @spotify_idle;
+  color: @spotify_idle;
 
-	padding: 0 3px 0 9px;
-	transition: color 0.3s;
+  padding: 0 3px 0 9px;
+  transition: color 0.5s;
 }
 
 #custom-spotify:hover {
-	color: @spotify_hover;
+  color: @spotify_hover;
 
-	transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 /*-----TRAY-----*/
 
 #tray {
-	padding: 0 6px;
+  padding: 0 6px;
 }
 
 #tray menu {
-	background-color: @tray_menu;
-	border: 1px solid @tray_menu_border;
-	padding: 6px 0;
+  background-color: @tray_menu;
+  border: 1px solid @tray_menu_border;
+  padding: 6px 0;
 }
 
 #tray menu menuitem {
-	color: @tray_menu_item;
+  color: @tray_menu_item;
 }
 
 #tray menu menuitem:hover {
-	color: @tray_menu_item_hover;
-	border: 0;
-	background-color: @tray_menu_item_hover_background;
+  color: @tray_menu_item_hover;
+  border: 0;
+  background-color: @tray_menu_item_hover_background;
 }
 
 /*---------------*/
@@ -182,17 +182,17 @@
 /*---------------*/
 
 #clock {
-	color: @clock_idle;
+  color: @clock_idle;
 
-	padding: 0px 6px;
+  padding: 0px 6px;
 
-	transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 #clock:hover {
-	color: @clock_hover;
+  color: @clock_hover;
 
-	transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 /*-----------------------------------------*/
@@ -200,16 +200,16 @@
 /*-----------------------------------------*/
 
 #custom-wl-gammarelay-brightness {
-	color: @brightness_idle;
+  color: @brightness_idle;
 
-	padding: 0 6px;
-	transition: color 0.3s;
+  padding: 0 6px;
+  transition: color 0.5s;
 }
 
 #custom-wl-gammarelay-brightness:hover {
-	color: @brightness_hover;
+  color: @brightness_hover;
 
-	transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 /*---------------------*/
@@ -217,142 +217,142 @@
 /*---------------------*/
 
 #custom-wireplumber {
-	color: @sound_idle;
+  color: @sound_idle;
 
-	padding: 0 6px;
-	transition: color 0.3s;
+  padding: 0 6px;
+  transition: color 0.5s;
 }
 
 #custom-wireplumber:hover {
-	color: @sound_hover;
+  color: @sound_hover;
 
-	transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 /*-----GROUP END-----*/
 
 #group-end {
-	margin-top: 4px;
-	margin-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 /*-----CUSTOM PIPE-----*/
 
 #custom-pipe {
-	font-size: 6px;
-	color: transparent;
+  font-size: 6px;
+  color: transparent;
 }
 
 /*-----BLUETOOTH-----*/
 
 #bluetooth {
-	color: @bluetooth_idle;
+  color: @bluetooth_idle;
 
-	background-color: @bluetooth_background_on;
+  background-color: @bluetooth_background_on;
 
-	border-radius: 2px;
+  border-radius: 2px;
 
-	padding: 0 10px;
+  padding: 0 10px;
 
-	transition: color 0.3s;
-	transition: background-color 0.3s;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 #bluetooth.off {
-	background-color: @bluetooth_background_off;
+  background-color: @bluetooth_background_off;
 
-	transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 #bluetooth.off:hover {
-	background-color: @bluetooth_background_off_hover;
-	
-	transition: background-color 0.3s;
+  background-color: @bluetooth_background_off_hover;
+
+  transition: background-color 0.5s;
 }
 
 #bluetooth:hover {
-	color: @bluetooth_hover;
-	background-color: @bluetooth_background_on_hover;
+  color: @bluetooth_hover;
+  background-color: @bluetooth_background_on_hover;
 
-	transition: color 0.3s;
-	transition: background-color 0.3s;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .bar_2k #bluetooth {
-	/* Global font size + 3px */
-	font-size: 21px;
+  /* Global font size + 3px */
+  font-size: 21px;
 }
 
 .bar_1080p #bluetooth {
-	/* Global font size + 3px */
-	font-size: 18px;
+  /* Global font size + 3px */
+  font-size: 18px;
 }
 
 /*-----NETWORK-----*/
 
 #network {
-	color: @network_idle;
+  color: @network_idle;
 
-	border-radius: 2px;
-	background-color: @network_background_connected;
-	
-	transition: color 0.3s;
-	transition: background-color 0.3s;
+  border-radius: 2px;
+  background-color: @network_background_connected;
+
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 #network.wifi {
-	/* padding: 0 10px 0 2px; */
+  /* padding: 0 10px 0 2px; */
 }
 
 #network.ethernet {
-	padding: 0 6px;
+  padding: 0 6px;
 }
 
 #network.disconnected {
-	/* padding: 0 6px 0 1px; */
-	background-color: @network_background_off;
+  /* padding: 0 6px 0 1px; */
+  background-color: @network_background_off;
 
-	transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 #network.disconnected:hover {
-	background-color: @network_background_off_hover;
-	
-	transition: background-color 0.3s;
+  background-color: @network_background_off_hover;
+
+  transition: background-color 0.5s;
 }
 
 #network:hover {
-	color: @network_hover;
-	background-color: @network_background_connected_hover;
+  color: @network_hover;
+  background-color: @network_background_connected_hover;
 
-	transition: color 0.3s;
-	transition: background-color 0.3s;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
 }
 
 /*-----CUSTOM POWER-----*/
 
 #custom-power {
-	color: @power_idle;
+  color: @power_idle;
 
-	padding: 0 15px 0 8px;
+  padding: 0 15px 0 8px;
 
-	/* padding: 0 6px 0 6px; */
-	
-	transition: color 0.3s;
+  /* padding: 0 6px 0 6px; */
+
+  transition: color 0.5s;
 }
 
 #custom-power:hover {
-	color: @power_hover;
+  color: @power_hover;
 
-	transition: color 0.3s;
+  transition: color 0.5s;
 }
 
 /*-----TOOLTIP-----*/
 
 tooltip {
-	background-color: @tooltip_background;
+  background-color: @tooltip_background;
 }
 
 tooltip label {
-	color: @tooltip_text;
+  color: @tooltip_text;
 }

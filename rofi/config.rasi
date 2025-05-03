@@ -18,42 +18,36 @@ configuration {
 /*-----Global-----*/
 
 * {
-	color0: #1A1525;
-	color1: #E77B2A;
-	color2: #A55EF0;
-	color3: #4DCC90;
-	color4: #ED45B8;
-	color5: #CC81F1;
-	color6: #8AE849;
-	color7: #D8D8D8;
-	color8: #1F192B;
-	color9: #E6964F;
-	color10: #B888EA;
-	color11: #81CEA9;
-	color12: #EE66C3;
-	color13: #D5A6F2;
-	color14: #A8DE82;
-	color15: #F2F2F2;
+	color0: #0e0e13;
+	color1: #b1535e;
+	color2: #d29d72;
+	color3: #3a5e83;
+	color4: #a5c6d4;
+	color5: #3b4c63;
+	color6: #8fa99c;
+	color7: #f4faff;
+	color8: #1a1f2b;
+	color9: #12161f;
 
-	fg-highlight: @color1;
+	fg-highlight: @color6;
 
-	bg-entry: @color0;
-	fg-entry: @color1;
-	fg-placeholder: #E77B2A50;
+	bg-entry: @color9;
+	fg-entry: @color6;
+	fg-placeholder: #8fa99c50;
 
-	bg-listview: @color0;
-	fg-element: @color4;
+	bg-listview: @color9;
+	fg-element: @color3;
 
-	bg-element-selected: @color8;
-	fg-element-selected: @color3;
-	border-color-element-selected: @color3;
+	bg-element-selected: @color5;
+	fg-element-selected: @color4;
+	border-color-element-selected: @color4;
 
 	bg-inputbar: @color8;
 
-	border-color: #2A233D;
+	border-color: @color5;
 
 	// border-radius
-    br: 10px;
+    br: 2px;
 
 	border-size-window: 2px;
 	border-size-element-selected: 2px;
@@ -154,7 +148,8 @@ element-text {
 }
 
 element selected.normal {
-	background-color: @bg-listview;
+	// background-color: @bg-listview;
+	background-color: @bg-element-selected;
 
 	border: @border-size-element-selected;
 	border-color: @border-color-element-selected;
