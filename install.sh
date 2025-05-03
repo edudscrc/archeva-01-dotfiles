@@ -8,7 +8,6 @@ DOTFILES=(
     ["hypr"]="$CONFIG_DIR/hypr"
     ["waybar"]="$CONFIG_DIR/waybar"
     ["rofi"]="$CONFIG_DIR/rofi"
-    ["wlogout"]="$CONFIG_DIR/wlogout"
     ["kitty"]="$CONFIG_DIR/kitty"
     ["fastfetch"]="$CONFIG_DIR/fastfetch"
     ["dunst"]="$CONFIG_DIR/dunst"

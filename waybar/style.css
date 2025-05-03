@@ -244,8 +244,11 @@
 
 #bluetooth,
 #custom-pipe,
+#custom-pipe2,
 #network,
-#custom-power {
+#custom-power,
+#custom-lock,
+#custom-reboot {
   margin: 8px 0;
   border-radius: 2px;
 }
@@ -256,6 +259,10 @@
 
 #custom-pipe {
   font-size: 6px;
+}
+
+#custom-pipe2 {
+  font-size: 4px;
 }
 
 /*-------------------*/
@@ -336,16 +343,30 @@
 /*-----POWER-----*/
 /*---------------*/
 
-#custom-power {
+#custom-power,
+#custom-lock,
+#custom-reboot {
   color: @power_idle;
   background-color: @power_background_idle;
-
-  padding: 0 9px 0 5px;
 
   transition: all 0.3s ease;
 }
 
-#custom-power:hover {
+#custom-power {
+  padding: 0 9px 0 5px;
+}
+
+#custom-lock {
+  padding: 0 8px 0 5px;
+}
+
+#custom-reboot {
+  padding: 0 8px 0 5px;
+}
+
+#custom-power:hover,
+#custom-lock:hover,
+#custom-reboot:hover {
   color: @power_hover;
   background-color: @power_background_hover;
 

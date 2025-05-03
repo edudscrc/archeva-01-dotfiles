@@ -30,6 +30,7 @@
       "custom/wl-gammarelay-brightness",
       "custom/wireplumber",
       "group/group-end"
+      // "group/group-power"
       // "custom/power"
     ]
   },
@@ -106,7 +107,8 @@
       "custom/pipe",
       "network",
       "custom/pipe",
-      "custom/power"
+      "group/group-power"
+      // "custom/power"
     ]
   },
   "bluetooth": {
@@ -126,15 +128,44 @@
     "tooltip-format-ethernet": "{ifname}",
     "tooltip-format-wifi": "{essid}"
   },
-  "custom/power": {
-    "format": "{icon}",
-    "format-icons": "",
-    "on-click": "wlogout -m 500",
-    "tooltip": false
-  },
 
   "custom/pipe": {
     "format": " ",
     "tooltip": false
+  },
+  "custom/pipe2": {
+    "format": " ",
+    "tooltip": false
+  },
+
+  "group/group-power": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 500,
+      "children-class": "not-power",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/power", // First element is the "group leader" and won't ever be hidden
+      "custom/lock",
+      "custom/pipe2",
+      "custom/reboot",
+      "custom/pipe2"
+    ]
+  },
+  "custom/lock": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "hyprlock"
+  },
+  "custom/reboot": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "systemctl reboot"
+  },
+  "custom/power": {
+    "format": "",
+    "tooltip": false,
+    "on-click": "systemctl poweroff"
   }
 }
