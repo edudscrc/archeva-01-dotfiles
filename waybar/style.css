@@ -1,54 +1,49 @@
-/*
-* * * * * * * * * * * * * * * * * * * * * * * * *
-* Author: Eduardo de Sá Coêlho Ribeiro Costa   	*
-* Github: edudscrc							   	            *
-*											   	                      *
-* Waybar v0.12.0						   	                *
-* * * * * * * * * * * * * * * * * * * * * * * * *
-*/
+/* Author: Eduardo de Sá Coêlho Ribeiro Costa */
+/* Github: https://github.com/edudscrc */
+/* Waybar v0.12.0 */
 
 @define-color modules_background #12161f;
-@define-color modules_border #1a1f2b;
+@define-color modules_border #252b37;
 
 @define-color workspaces_button_idle #12161f;
 @define-color workspaces_button_active #12161f;
-@define-color workspaces_button_background_idle #263B4C;
-@define-color workspaces_button_background_active #a5c6d4;
+@define-color workspaces_button_background_idle #3b4c63;
+@define-color workspaces_button_background_active #6b90ad;
 
 @define-color spotify_idle #8fa99c;
 @define-color spotify_hover #b1c3ba;
 
 @define-color tray_menu #12161f;
-@define-color tray_menu_border #1a1f2b;
-@define-color tray_menu_item #3a5e83;
-@define-color tray_menu_item_hover #3a5e83;
-@define-color tray_menu_item_hover_background #1a1f2b;
+@define-color tray_menu_border #252b37;
+@define-color tray_menu_item #4e6a89;
+@define-color tray_menu_item_hover #4e6a89;
+@define-color tray_menu_item_hover_background #252b37;
 
-@define-color clock_idle #3a5e83;
-@define-color clock_hover #a5c6d4;
+@define-color clock_idle #4e6a89;
+@define-color clock_hover #7b96b4;
 
-@define-color weather_idle #a5c6d4;
-@define-color weather_hover #3a5e83;
+@define-color weather_idle #6b90ad;
+@define-color weather_hover #97b1c6;
 
-@define-color brightness_idle #3a5e83;
-@define-color brightness_hover #a5c6d4;
+@define-color brightness_idle #4e6a89;
+@define-color brightness_hover #7b96b4;
 
-@define-color sound_idle #3a5e83;
-@define-color sound_hover #a5c6d4;
+@define-color sound_idle #4e6a89;
+@define-color sound_hover #7b96b4;
 
 @define-color bluetooth_idle #12161f;
 @define-color bluetooth_hover #12161f;
-@define-color bluetooth_background_on #a5c6d4;
-@define-color bluetooth_background_on_hover #cfd8e3;
-@define-color bluetooth_background_off #263B4C;
-@define-color bluetooth_background_off_hover #334f66;
+@define-color bluetooth_background_on #6b90ad;
+@define-color bluetooth_background_on_hover #97b1c6;
+@define-color bluetooth_background_off #3b4c63;
+@define-color bluetooth_background_off_hover #4f6584;
 
 @define-color network_idle #12161f;
 @define-color network_hover #12161f;
-@define-color network_background_connected #a5c6d4;
-@define-color network_background_connected_hover #cfd8e3;
-@define-color network_background_off #263B4C;
-@define-color network_background_off_hover #334f66;
+@define-color network_background_connected #6b90ad;
+@define-color network_background_connected_hover #97b1c6;
+@define-color network_background_off #3b4c63;
+@define-color network_background_off_hover #4f6584;
 
 @define-color power_idle #12161f;
 @define-color power_hover #12161f;
@@ -56,7 +51,7 @@
 @define-color power_background_hover #c8878e;
 
 @define-color tooltip_background #12161f;
-@define-color tooltip_text #f4faff;
+@define-color tooltip_text #a5c6d4;
 
 /*----------------*/
 /*-----GLOBAL-----*/
