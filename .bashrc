@@ -28,3 +28,5 @@ parse_git_branch() {
 }
 
 PS1="[$BLUE\u@\h $CYAN\w$RESET]$MAGENTA\$(parse_git_branch | sed 's/^/  /') $YELLOW\$$RESET "
+
+fastfetch
